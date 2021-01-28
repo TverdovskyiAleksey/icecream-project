@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
     <title>Заголовок страницы</title>
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <div>
+      <!-- nav -->
+      <include src="./partials/nav.html"></include>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+      <!-- hero -->
+      <include src="./partials/hero.html"></include>
+    </div>
+
+    <main>
+      <!-- products -->
+      <section>
+        <include src="./partials/products.html"></include>
+      </section>
+      
+      <!-- preparation -->
+      <section>
+        <include src="./partials/preparation.html"></include>
+      </section>
+
+      <!-- comments -->
+      <section>
+        <include src="./partials/comments.html"></include>
+      </section>
+
+      <!-- location -->
+      <section>
+        <include src="./partials/location.html"></include>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <section>
+      <include src="./partials/footer.html"></include>
+    </section>
+
     <script src="./index.js"></script>
   </body>
 </html>

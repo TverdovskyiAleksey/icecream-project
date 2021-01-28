@@ -1,0 +1,66 @@
+.location {
+  background-color: $footer-pink-color;
+}
+
+.locationContainer {
+  display: inline-block;
+  //   margin-top: -84px;
+  max-width: 480px;
+  padding: 0 50px;
+}
+
+.locationContainer .list {
+  margin-bottom: 54px;
+}
+
+.locationCard {
+  width: 100%;
+  padding: 43px 20px;
+  overflow: hidden;
+  background-color: $primary-white-color;
+  box-shadow: $shadow-card;
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.cardTitle {
+  display: inline-block;
+  padding: 0 30px;
+  margin-bottom: 25px;
+
+  font-family: $font-family-body;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+
+  color: $primary-white-color;
+  background-color: $accent-coffee-color;
+}
+
+.food {
+  background-color: $accent-green-color;
+}
+
+.locationName {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+
+  letter-spacing: 0.04em;
+  color: $black-text-color;
+}
+
+.locationText {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: $gray-text-color;
+}

@@ -1,3 +1,10 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1199px){
+        position: relative;
+    }
+}
 .logo {
     display: flex;
     width: 199px;
@@ -18,18 +25,39 @@
 
 .burger-menu {
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
+        position: absolute;
+        top: 0;
+        right: 0;
         display: none;
-    
+        width: 250px;
+        height: 502px;
+        padding-top: 136px;
+        padding-left: 21px;
+        padding-right: 21px;
+        background-color: $burger-pink-color;
+        text-align: center;
+
         &.is-open {
             display: block;
         }
     }
+    @media screen and (min-width: 1120px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: $hero-pink-color;
+    }
 }
 .btn-nav {
-    width: 159px;
+    // width: 159px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 209px;
     height: 44px;
-    padding: 16px;
+    padding: 16px 37px;
+    margin-left: auto;
     font-size: 16px;
     line-height: 1.31;
     font-weight: $font-weight-bold;
@@ -40,12 +68,151 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: $font-weight-bold;  
     
     &:hover {
         cursor: pointer;
     }
 }
 .buy {
-    margin-left: 20px;
+    margin-left: 12px;
+}
+.nav-menu {
+    width: 20px;
+    height: 12px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $primary-passion-color;
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: transparent;
+    cursor: pointer;
+
+    transition: color 250ms $timing-function;
+    
+    .icon-close {
+        display: none;
+    }
+    &.is-open .icon-close {
+        display: block;
+        position: absolute;
+        top: 23px;
+        right: 28px;
+        z-index: 5;
+
+        width: 14px;
+        height: 14px;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: $primary-white-color;
+        background-color: transparent;
+        border: 1px solid transparent;
+        outline: transparent;
+        cursor: pointer;
+
+        transition: color 250ms $timing-function;
+    }
+    &.is-open .icon-menu {
+        display: none;
+    }
+    
+    @media screen and (min-width: 1120px) {
+        display: none;
+    }
+}
+.menu {
+    fill: currentColor;
+}
+.site-nav {
+
+    @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    }
+    .item {
+        font-family: $font-family-body;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.29;
+        color: $primary-white-color;
+
+        // @media screen and (min-width: $tablet) {
+        //     font-size: 14px;
+        // }
+    }
+    .item + .item {
+        @media screen and (max-width: 767px) {
+            margin-top: 22px;
+        }
+    }
+    
+    // @media screen and (min-width: $tablet) {
+    //     display: flex; 
+    //     margin-left: 88px;
+    
+    //     .item:not(:last-child) {
+    //         margin-right: 50px;
+    //     }
+    // }
+    // @media screen and (min-width: $desktop) {
+    //     margin-left: 93px;
+    // }
+}
+// .site-nav .link {
+//     display: block;
+//     padding-bottom: 12px;
+//     position: relative;
+//     color: $title-text-color;
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+//     &+ .link {
+//     @media screen and (max-width: 767px) {
+//         padding-top: 40px;
+//     }
+// }
+    
+//     transition: color 250ms $timing-function;
+
+//     @media screen and (min-width: $tablet) {
+//         padding-top: 32px;
+//         padding-bottom: 32px;
+//     }
+        
+//     &:hover, &:focus {
+//         color:$hover-color;
+//     }
+// }
+.menu-close {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+
+    width: 14px;
+    height: 14px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $primary-white-color;
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: transparent;
+    cursor: pointer;
+
+    transition: color 250ms $timing-function;
 }

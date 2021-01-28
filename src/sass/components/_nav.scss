@@ -1,0 +1,51 @@
+.logo {
+    display: flex;
+    width: 199px;
+    align-items: center;
+    text-decoration: none;
+    font-family: $font-family-title;
+    font-weight: $font-weight-body;
+    font-size: 27px;
+    line-height: 1.13;
+    letter-spacing: $letter-spacing-body;
+    text-transform: uppercase;
+    color: $primary-passion-color;
+
+    .img-logo {
+        margin-right: 20px;
+    }
+}
+
+.burger-menu {
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    
+        &.is-open {
+            display: block;
+        }
+    }
+}
+.btn-nav {
+    width: 159px;
+    height: 44px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 1.31;
+    font-weight: $font-weight-bold;
+    color: $primary-passion-color;
+    background-color: $primary-white-color;
+    border-radius: 22px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: $font-weight-bold;  
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+.buy {
+    margin-left: 20px;
+}

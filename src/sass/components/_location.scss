@@ -1,3 +1,9 @@
+// локация
+
+p {
+  margin: 0;
+}
+
 .location {
   background-color: $footer-pink-color;
 }
@@ -57,10 +63,39 @@
 }
 
 .locationText {
-  margin: 0;
+  margin-bottom: 50px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
 
   color: $gray-text-color;
+}
+
+.openingDays {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.openinHours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  color: $title-pink-color;
+}
+
+.schedule {
+  margin-bottom: 50px;
+}
+
+.schedule .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contactsItem {
+  color: $gray-text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
 }

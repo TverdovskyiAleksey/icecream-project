@@ -5,6 +5,16 @@
 
 body {
   background-color: #e5e5e5;
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -28,6 +38,7 @@ h3,
 h4,
 h5 {
   margin: 0;
+  font-family: 'Titan One', cursive;
 }
 
 .visually-hidden {
@@ -40,11 +51,10 @@ h5 {
 }
 
 .container {
-  // width: 1050px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: 320px) {
     width: 320px;

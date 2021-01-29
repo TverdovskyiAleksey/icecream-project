@@ -376,7 +376,10 @@ h5 {
 }
 
 .made {
+  width: 200px;
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Titan One;
   font-size: 34px;
   line-height: 39px;
@@ -392,19 +395,22 @@ h5 {
   margin-left: auto;
 }
 
+.img-icon {
+  margin-top: 38px;
+}
+
 .milk {
   margin-right: auto;
   margin-left: auto;
 }
 
 .relative {
-  position: relative;
-  top: -200px;
+  position: absolute;
+  top: 750px;
 }
 
 .madetxt {
   display: inline-block;
-  margin-top: 46px;
   margin-bottom: 26px;
   font-family: DM Sans;
   font-weight: 500;
@@ -414,6 +420,7 @@ h5 {
 }
 
 .made-text {
+  margin-top: 47px;
   width: 220px;
   margin-right: auto;
   margin-left: auto;
@@ -440,7 +447,7 @@ h5 {
 }
 
 .button {
-  margin-top: 17px;
+  margin-top: 47px;
   width: 176px;
   height: 44px;
   font-family: DM Sans;

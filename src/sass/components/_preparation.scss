@@ -16,7 +16,10 @@
 }
 
 .made {
+  width: 200px;
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Titan One;
   font-size: 34px;
   line-height: 39px;
@@ -33,6 +36,7 @@
 }
 
 .img-icon {
+  margin-top: 38px;
   // margin-right: auto;
   // margin-left: auto;
 }
@@ -41,13 +45,13 @@
   margin-left: auto;
 }
 .relative {
-  position: relative;
-  top: -200px;
+  position: absolute;
+  top: 750px;
 }
 
 .madetxt {
   display: inline-block;
-  margin-top: 46px;
+  // margin-top: 46px;
   margin-bottom: 26px;
   font-family: DM Sans;
   font-weight: 500;
@@ -56,6 +60,7 @@
   color: $black-text-color;
 }
 .made-text {
+  margin-top: 47px;
   width: 220px;
   margin-right: auto;
   margin-left: auto;
@@ -80,7 +85,7 @@
   text-align: left;
 }
 .button {
-  margin-top: 17px;
+  margin-top: 47px;
   width: 176px;
   height: 44px;
   font-family: DM Sans;

@@ -92,8 +92,6 @@
     border: 1px solid transparent;
     outline: transparent;
     cursor: pointer;
-
-    transition: color 250ms $timing-function;
     
     .icon-close {
         display: none;
@@ -139,80 +137,23 @@
     flex-direction: column;
     align-items: start;
     }
-    .item {
+        
+        .item + .item {
+            @media screen and (max-width: 767px) {
+                margin-top: 22px;
+            }
+        }
+
+    .link {
+        text-decoration: none;
         font-family: $font-family-body;
         font-weight: $font-weight-bold;
-        text-decoration: none;
         font-size: 14px;
         line-height: 1.29;
         color: $primary-white-color;
-
-        // @media screen and (min-width: $tablet) {
-        //     font-size: 14px;
-        // }
-    }
-    .item + .item {
-        @media screen and (max-width: 767px) {
-            margin-top: 22px;
+        
+        &:hover, &:focus {
+            color:$primary-passion-color
         }
     }
-    
-    // @media screen and (min-width: $tablet) {
-    //     display: flex; 
-    //     margin-left: 88px;
-    
-    //     .item:not(:last-child) {
-    //         margin-right: 50px;
-    //     }
-    // }
-    // @media screen and (min-width: $desktop) {
-    //     margin-left: 93px;
-    // }
-}
-// .site-nav .link {
-//     display: block;
-//     padding-bottom: 12px;
-//     position: relative;
-//     color: $title-text-color;
-//     font-weight: 500;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-
-//     &+ .link {
-//     @media screen and (max-width: 767px) {
-//         padding-top: 40px;
-//     }
-// }
-    
-//     transition: color 250ms $timing-function;
-
-//     @media screen and (min-width: $tablet) {
-//         padding-top: 32px;
-//         padding-bottom: 32px;
-//     }
-        
-//     &:hover, &:focus {
-//         color:$hover-color;
-//     }
-// }
-.menu-close {
-    position: absolute;
-    top: 23px;
-    right: 28px;
-
-    width: 14px;
-    height: 14px;
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: $primary-white-color;
-    background-color: transparent;
-    border: 1px solid transparent;
-    outline: transparent;
-    cursor: pointer;
-
-    transition: color 250ms $timing-function;
 }

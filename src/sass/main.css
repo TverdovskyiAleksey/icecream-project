@@ -357,7 +357,32 @@ h5 {
   }
 }
 
+.preparation {
+  background-color: #FFF5F6;
+  text-align: center;
+}
+
 .heading {
-  background-color: tomato;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.made {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.trademark {
+  margin-right: auto;
+  margin-left: auto;
 }
 /*# sourceMappingURL=main.css.map */

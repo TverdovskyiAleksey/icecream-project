@@ -1,3 +1,27 @@
+.preparation {
+  background-color: $footer-pink-color;
+  text-align: center;
+}
 .heading {
-  background-color: tomato;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-pink-color;
+}
+
+.made {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primary-passion-color;
+}
+.trademark {
+  margin-right: auto;
+  margin-left: auto;
 }

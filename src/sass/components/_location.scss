@@ -6,11 +6,12 @@ p {
 
 .location {
   background-color: $footer-pink-color;
+  padding-bottom: 56px;
 }
 
 .locationContainer {
   display: inline-block;
-  //   margin-top: -84px;
+  margin-top: -84px;
   max-width: 480px;
   padding: 0 50px;
 }
@@ -98,4 +99,33 @@ p {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.locationButton {
+  font-family: DM Sans;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-width: 176px;
+  min-height: 44px;
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: $primary-passion-color;
+  background-color: $primary-white-color;
+  border-radius: 22px;
+  border: 0 solid transparent;
+  cursor: pointer;
+}
+
+.accentButton {
+  color: $primary-white-color;
+  background-color: $location-pink-color;
+  margin-bottom: 10px;
 }

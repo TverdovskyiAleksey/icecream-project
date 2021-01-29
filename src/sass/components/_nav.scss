@@ -1,7 +1,8 @@
 .main-nav {
     display: flex;
     align-items: center;
-    @media screen and (max-width: 1199px){
+
+    @media screen and (max-width: 1199px) {
         position: relative;
         padding-top: 6px;
         padding-left: 20px;
@@ -11,7 +12,6 @@
     display: flex;
     width: 199px;
     align-items: center;
-    text-decoration: none;
     font-family: $font-family-title;
     font-weight: $font-weight-body;
     font-size: 27px;
@@ -152,12 +152,15 @@
                 padding-bottom: 13px;
                 padding-left: 21px;
                 text-align: start;
-                border: 1px solid #E18298;
+                border-top: 1px solid #E18298;
+
+                &:last-child {
+                    border-bottom: 1px solid #E18298;
+                }
             }
         }
 
     .link {
-        text-decoration: none;
         font-family: $font-family-body;
         font-weight: $font-weight-bold;
         font-size: 14px;

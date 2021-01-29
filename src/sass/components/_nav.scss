@@ -82,8 +82,8 @@
     margin-left: 12px;
 }
 .nav-menu {
-    width: 20px;
-    height: 12px;
+    width: 22px;
+    height: 16px;
     padding: 0;
     margin-left: auto;
     margin-right: 20px;
@@ -92,7 +92,6 @@
     justify-content: center;
     align-items: center;
 
-    color: $primary-passion-color;
     background-color: transparent;
     border: 1px solid transparent;
     outline: transparent;
@@ -111,15 +110,14 @@
     &.is-open .icon-close {
         display: block;
 
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
         padding: 0;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
-        color: $primary-white-color;
         background-color: transparent;
         border: 1px solid transparent;
         outline: transparent;
@@ -130,16 +128,12 @@
     &.is-open .icon-menu {
         display: none;
     }
-    // &:hover, &:focus {
-    //     color: $primary-passion-color;
-    // }
+    
     @media screen and (min-width: 1200px) {
         display: none;
     }
 }
-.menu {
-    fill: currentColor;
-}
+
 .site-nav {
 
     @media screen and (max-width: 767px) {
@@ -168,9 +162,5 @@
         font-size: 14px;
         line-height: 1.29;
         color: $primary-white-color;
-        
-        &:hover, &:focus {
-            color:$primary-passion-color
-        }
     }
 }

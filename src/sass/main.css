@@ -99,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -389,5 +389,54 @@ h5 {
 .img-icon {
   margin-right: auto;
   margin-left: auto;
+}
+
+.milk {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.madetxt {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #000000;
+}
+
+.made-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+}
+
+.button {
+  width: 176px;
+  height: 44px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: #d41443;
+  border-radius: 22px;
+  background-color: #ffffff;
+}
+
+.indicators {
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 }
 /*# sourceMappingURL=main.css.map */

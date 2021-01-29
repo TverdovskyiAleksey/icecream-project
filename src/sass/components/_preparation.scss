@@ -30,3 +30,47 @@
   margin-right: auto;
   margin-left: auto;
 }
+.milk {
+  margin-right: auto;
+  margin-left: auto;
+}
+.madetxt {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: $black-text-color;
+}
+.made-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+}
+.button {
+  width: 176px;
+  height: 44px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: $primary-passion-color;
+  border-radius: 22px;
+  background-color: $primary-white-color;
+}
+.indicators {
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}

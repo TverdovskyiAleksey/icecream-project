@@ -82,8 +82,8 @@
     margin-left: 12px;
 }
 .nav-menu {
-    width: 22px;
-    height: 14px;
+    width: 20px;
+    height: 12px;
     padding: 0;
     margin-left: auto;
     margin-right: 20px;
@@ -111,8 +111,8 @@
     &.is-open .icon-close {
         display: block;
 
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
         padding: 0;
 
         display: flex;
@@ -130,8 +130,10 @@
     &.is-open .icon-menu {
         display: none;
     }
-    
-    @media screen and (min-width: 1120px) {
+    // &:hover, &:focus {
+    //     color: $primary-passion-color;
+    // }
+    @media screen and (min-width: 1200px) {
         display: none;
     }
 }

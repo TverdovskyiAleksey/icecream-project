@@ -5,10 +5,10 @@
     padding-bottom: 98px;
     background-color:$primary-white-color ;
     @media screen and (min-width: 1200px) {
-        padding-left: 115px;
-        padding-right: 115px;
+        display: grid;
+        justify-content: center;
     }
-    b{
+    .text-products{
         display: block;
         margin-bottom: 15px;
         font-family:$font-family-title;
@@ -31,8 +31,15 @@
             line-height: 34px;
             letter-spacing: 0.04em;
         }
+        &.decor{
+            color: #fff;
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
     }
-    h2{
+    .title-products{
         margin-bottom: 130px;
         font-family: $font-family-title;
         font-style: normal;
@@ -107,7 +114,7 @@
     &.milkshakes{
         background-color:$accent-green-color ;
     }
-    h3{
+    .title-menu{
         font-family: $font-family-title;
         font-style: normal;
         font-weight: $font-weight-body;
@@ -129,7 +136,7 @@
             letter-spacing: 0.04em;   
         }
     }
-    p{
+    .text-menu{
         margin: 30px 0px;
         padding: 0 40px;
         text-align: center;
@@ -149,15 +156,9 @@
             line-height: 28px;
             letter-spacing: 0.04em;
         }
-        &.decor{
-            color: #fff;
-            font-size: 35px;
-            font-weight: 700;
-            line-height: 1;
-            margin-bottom: 30px;
-        }
+        
     }
-    img{
+    .products-images{
         display: inline-block;
         width: 100%;
         margin-top: -130px;

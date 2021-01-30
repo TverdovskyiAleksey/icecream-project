@@ -1,0 +1,140 @@
+/*picture*/
+.comments-collage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+
+  background-color: $primary-white-color;
+}
+/*picture*/
+.comments-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 29px;
+
+  background-color: $primary-white-color;
+}
+.photo {
+  border-radius: 50px;
+}
+
+/*p*/
+.comments-description {
+  width: 157px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  margin: 0px;
+  color: $black-text-color;
+}
+.comments-description {
+  position: relative;
+  z-index: 1;
+}
+.comments-description::before {
+  position: absolute;
+  content: '';
+  width: 54px;
+  height: 40px;
+  display: block;
+  top: -15px;
+  left: 4px;
+  background-image: url(../images/comments/img2-mobile@1x.svg);
+  z-index: -2;
+}
+/*div*/
+.comments-home {
+  padding-top: 30px;
+  padding-bottom: 86px;
+
+  background-color: $primary-white-color;
+}
+/*h3*/
+.comments-address {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 30px;
+
+  color: $black-text-color;
+}
+/*ul*/
+.home-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px;
+}
+/*li*/
+.points {
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+
+  background-color: $hover-passion-button;
+}
+/*ul*/
+.address-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*li*/
+.comments-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+
+  background-color: $coments-icon-color;
+}
+/*li*/
+.points:not(:last-child) {
+  margin-right: 10px;
+}
+.comments-icon:not(:last-child) {
+  margin-right: 18px;
+}
+/*svg*/
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $primary-white-color;
+}
+/*div*/
+.comments-text {
+  width: 280px;
+  height: 340px;
+  padding: 43px 66px 26px 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $coments-text-color;
+}
+
+.linear::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  border-radius: 2px;
+  background-color: $linear-color;
+}
+.line {
+  position: relative;
+}

@@ -1,0 +1,164 @@
+// локация
+
+p {
+  margin: 0;
+}
+
+.location {
+  background-color: $footer-pink-color;
+  padding-bottom: 56px;
+}
+
+.locationContainer {
+  display: block;
+  margin-top: -84px;
+  max-width: 480px;
+  padding: 0 50px;
+}
+
+.locationContainer .list {
+  margin-bottom: 54px;
+}
+
+.locationCard {
+  width: 100%;
+  padding: 43px 20px;
+  overflow: hidden;
+  background-color: $primary-white-color;
+  box-shadow: $shadow-card;
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.cardTitle {
+  display: inline-block;
+  padding: 0 30px;
+  margin-bottom: 25px;
+
+  font-family: $font-family-body;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+
+  color: $primary-white-color;
+  background-color: $accent-coffee-color;
+}
+
+.food {
+  background-color: $accent-green-color;
+}
+
+.locationName {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+
+  letter-spacing: 0.04em;
+  color: $black-text-color;
+  font-family: $font-family-body;
+}
+
+.locationText {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  position: relative;
+
+  color: $gray-text-color;
+}
+
+.locationText::after,
+.schedule .item::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  border-radius: 2px;
+  background-color: #e1e1e1;
+}
+
+.openingDays {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.openinHours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  color: $title-pink-color;
+}
+
+.schedule {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.schedule .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contactsItem {
+  color: $gray-text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.locationButton {
+  font-family: DM Sans;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 176px;
+  min-height: 44px;
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: $primary-passion-color;
+  background-color: $primary-white-color;
+  border-radius: 22px;
+  border: 0 solid transparent;
+  cursor: pointer;
+}
+
+.accentButton {
+  color: $primary-white-color;
+  background-color: $location-pink-color;
+  margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $location-pink-color;
+  }
+}
+
+.hoverButton {
+  &:hover,
+  &:focus {
+    background-color: $hover-button;
+  }
+}
+
+.buttonIcon {
+  --color1: currentColor;
+  margin-left: 14px;
+}

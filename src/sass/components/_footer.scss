@@ -1,9 +1,10 @@
 .footer-container {
-  padding-top: 0;
+  padding-top: 57px;
   background-color: $footer-pink-color;
   font-style: normal;
 
   @media screen and (min-width: 768px) {
+    // padding-top: 57px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -59,6 +60,25 @@
     font-size: 58px;
     line-height: 1.138;
   }
+
+  animation-name: changeColor;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes changeColor {
+  0% {
+    color: $primary-passion-color;
+  }
+
+  50% {
+    color: $accent-coffee-color;
+  }
+
+  100% {
+    color: $hover-passion-button;
+  }
 }
 
 .footer-contacts {
@@ -107,12 +127,13 @@
   align-items: center;
   justify-content: center;
 
-  transition-property: background-color;
+  transition-property: background-color, scale;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
   &:hover,
   &:focus {
     background-color: $primary-passion-color;
+    transform: scale(1.2);
   }
   @media screen and (min-width: 768px) {
     width: 34px;
@@ -216,6 +237,10 @@
     display: block;
     text-align: center;
   }
+}
+
+.footer {
+  position: relative;
 }
 
 .footer::after {

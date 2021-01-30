@@ -1,31 +1,31 @@
+<picture class="comments-collage">
+  <source
+    srcset="
+      ./images/comments/home-pic5-desctop@1x.jpg 1x,
+      ./images/comments/home-pic5-desctop@2x.jpg 2x
+    "
+    media="(min-width:1200px)"
+    type="image/jpg"
+  />
+  <source
+    srcset="
+      ./images/comments/home-pic5-tablet@1x.jpg 1x,
+      ./images/comments/home-pic5-tablet@2x.jpg 2x
+    "
+    media="(min-width:768px)"
+    type="image/jpg"
+  />
+  <source
+    srcset="
+      ./images/comments/home-pic5-mobile@1x.jpg 1x,
+      ./images/comments/home-pic5-mobile@2x.jpg 2x
+    "
+    media="(max-width:767px)"
+    type="image/jpg"
+  />
+  <img src="./images/comments/home-pic5-mobile@1x.jpg" alt="Фото колаж" />
+</picture>
 <div class="container">
-  <picture class="comments-collage">
-    <source
-      srcset="
-        ./images/comments/home-pic5-desctop@1x.jpg 1x,
-        ./images/comments/home-pic5-desctop@2x.jpg 2x
-      "
-      media="(min-width:1200px)"
-      type="image/jpg"
-    />
-    <source
-      srcset="
-        ./images/comments/home-pic5-tablet@1x.jpg 1x,
-        ./images/comments/home-pic5-tablet@2x.jpg 2x
-      "
-      media="(min-width:768px)"
-      type="image/jpg"
-    />
-    <source
-      srcset="
-        ./images/comments/home-pic5-mobile@1x.jpg 1x,
-        ./images/comments/home-pic5-mobile@2x.jpg 2x
-      "
-      media="(max-width:767px)"
-      type="image/jpg"
-    />
-    <img src="./images/comments/home-pic5-mobile@1x.jpg" alt="Фото колаж" />
-  </picture>
   <picture class="comments-photo">
     <source
       srcset="
@@ -59,9 +59,19 @@
   </picture>
   <div class="comments-text">
     <p class="comments-description">
-      Nullam viverra cosectetuer. Quisque cursus et, porttitor risus. Aliquam
-      sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in
-      nibh vel risus.
+      <span class="line"
+        ><span class="linear">Nullam viverra consectetuer.</span></span
+      >
+      <span class="line"
+        ><span class="linear">Quisque cursus et, porttitor </span></span
+      ><span class="line"
+        ><span class="linear">risus.Aliquam sem. In hendrerit </span></span
+      ><span class="line"
+        ><span class="linear">nulla quam nunc, accumsan</span></span
+      ><span class="line"
+        ><span class="linear">congue.Lorem ipsum primis in </span></span
+      >
+      <span class="line"><span class="linear">nibh vel risus.</span></span>
     </p>
   </div>
   <div class="comments-home">
@@ -74,7 +84,7 @@
     <ul class="address-points">
       <li class="comments-icon">
         <svg class="icon" width="12" height="12">
-          <use href="./images/sprite.svg#icon-home"></use>
+          <use href="./images/comments/sprite.svg#icon-home"></use>
         </svg>
       </li>
       <li class="comments-icon"></li>

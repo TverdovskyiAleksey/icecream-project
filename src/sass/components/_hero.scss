@@ -1,0 +1,96 @@
+.hero {
+  background-color: $hero-pink-color;
+  position: relative;
+  width: 100%;
+  height: 502px;
+  padding-top: 83px;
+}
+
+.hero-left-part-container {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  z-index: 10;
+}
+
+.hero-heading {
+  font-family: titan one;
+  font-weight: 400;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+
+  & > .hero-heading-fisrt-part {
+    display: block;
+    width: 170px;
+    font-size: 26px;
+    color: $primary-white-color;
+    line-height: 1.145;
+  }
+
+  & > .hero-heading-two-part {
+    font-size: 48px;
+    color: $primary-passion-color;
+    line-height: 0.955;
+  }
+}
+
+.hero-btn-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero-btn-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+  height: 24px;
+  background-color: $primary-passion-color;
+  color: $primary-white-color;
+  margin-right: 9px;
+  border-radius: 20px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+.hero-btn-how-made {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 24px;
+  background-color: $primary-white-color;
+  color: $primary-passion-color;
+  border-radius: 20px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+.hero-description-container {
+  display: none;
+}
+
+.circle {
+  width: 346px;
+  height: 346px;
+  background-color: $title-pink-color;
+  border-radius: 50%;
+  // margin-top: 83px;
+  margin-left: 36px;
+  margin-right: auto;
+}
+
+.hero-bg-img {
+  position: absolute;
+  width: 171px;
+  top: 92px;
+  left: 117px;
+}
+
+.hero-right-part {
+  display: none;
+}

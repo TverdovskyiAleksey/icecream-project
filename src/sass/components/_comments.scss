@@ -20,18 +20,10 @@
   border-radius: 50px;
 }
 
-/*div*/
-.comments-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: $coments-text-color;
-}
 /*p*/
 .comments-description {
   width: 157px;
-  font-family: $font-family-body;
+  font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -131,7 +123,7 @@
 
   background-color: $coments-text-color;
 }
-
+/*span*/
 .linear::after {
   content: '';
   display: block;

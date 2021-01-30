@@ -1,0 +1,129 @@
+@media screen and (max-width: 320px) {
+  .preparation {
+    background-color: $footer-pink-color;
+    text-align: center;
+  }
+}
+.heading {
+  display: inline-block;
+  margin-top: 125px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-pink-color;
+}
+
+.made {
+  width: 200px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primary-passion-color;
+}
+.trademark {
+  margin-top: 26px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.img-icon {
+  margin-top: 38px;
+  // margin-right: auto;
+  // margin-left: auto;
+}
+.milk {
+  margin-right: auto;
+  margin-left: auto;
+}
+.relative {
+  position: absolute;
+  top: 750px;
+}
+
+.madetxt {
+  display: inline-block;
+  // margin-top: 46px;
+  margin-bottom: 26px;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: $black-text-color;
+}
+.made-text {
+  margin-top: 47px;
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  text-align: left;
+}
+.text {
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+.button {
+  margin-top: 47px;
+  width: 176px;
+  height: 44px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: $primary-passion-color;
+  border-radius: 22px;
+  border: solid $primary-white-color;
+  background-color: $primary-white-color;
+}
+.indicators {
+  display: inline-block;
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 16px;
+  color: #d41443;
+}
+.indicatorstxt {
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
+.total {
+  text-align: left;
+  margin-left: 20px;
+}
+.last {
+  margin-bottom: 145px;
+  display: inline-block;
+}

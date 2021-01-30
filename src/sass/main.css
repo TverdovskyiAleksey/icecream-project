@@ -296,8 +296,11 @@ li {
 
 img {
   display: block;
+<<<<<<< HEAD
   max-width: 100%;
   height: auto;
+=======
+>>>>>>> dev
 }
 
 h1,
@@ -328,7 +331,10 @@ h5 {
     width: 320px;
     padding-left: 20px;
     padding-right: 20px;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+>>>>>>> dev
   }
 }
 
@@ -347,6 +353,7 @@ h5 {
     padding-right: 15px;
   }
 }
+<<<<<<< HEAD
 
 /*picture*/
 .comments-collage {
@@ -528,4 +535,6 @@ h5 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+=======
+>>>>>>> dev
 /*# sourceMappingURL=main.css.map */

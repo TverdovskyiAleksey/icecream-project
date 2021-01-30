@@ -1,9 +1,15 @@
+header {
+    position: relative;
+    overflow: hidden;
+}
 .main-nav {
+    position: absolute;
+    width: 100%;
+    z-index: 11;
     display: flex;
     align-items: center;
 
     @media screen and (max-width: 1199px) {
-        position: relative;
         padding-top: 6px;
         padding-left: 20px;
     }
@@ -162,5 +168,9 @@
         font-size: 14px;
         line-height: 1.29;
         color: $primary-white-color;
+
+        &:hover, &:focus {
+            color:$primary-passion-color
+        }
     }
 }

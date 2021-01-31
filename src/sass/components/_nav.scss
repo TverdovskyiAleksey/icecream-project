@@ -52,7 +52,7 @@ header {
             transform: translateX(0);
         }
     }
-    @media screen and (min-width: 1120px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         width: 100%;
         align-items: center;
@@ -89,7 +89,7 @@ header {
 }
 .nav-menu {
     width: 22px;
-    height: 16px;
+    height: 22px;
     padding: 0;
     margin-left: auto;
     margin-right: 20px;
@@ -98,11 +98,21 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-color: transparent;
-    border: 1px solid transparent;
+    background-color: $title-pink-color;
+    color: $primary-passion-color;
+    border-radius: 50%;
+    border: 1px solid $title-pink-color;
     outline: transparent;
     cursor: pointer;
-    
+    overflow: hidden;
+
+    &:hover, &:focus {
+        background-color: $primary-passion-color;
+        color: $primary-white-color;
+    }
+
+    transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
     .icon-close {
         display: none;
     }
@@ -111,6 +121,14 @@ header {
         top: 23px;
         right: 8px;
         z-index: 3;
+        color: $primary-white-color;
+        background-color: $title-pink-color;
+
+        transition: background-color 250ms $timing-function;
+
+        &:hover, &:focus {
+        background-color: $primary-passion-color;
+        }
 
     }
     &.is-open .icon-close {
@@ -129,7 +147,7 @@ header {
         outline: transparent;
         cursor: pointer;
 
-        transition: color 250ms $timing-function;
+    transition: background-color 250ms $timing-function;
     }
     &.is-open .icon-menu {
         display: none;
@@ -139,16 +157,19 @@ header {
         display: none;
     }
 }
+.menu {
+    stroke: currentColor;
+}
 
 .site-nav {
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     }
         
         .item {
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 1199px) {
                 width: 100%;
                 padding-top: 11px;
                 padding-bottom: 13px;

@@ -1,3 +1,12 @@
+.comments-conteiner {
+  display: block;
+  margin: 0px;
+  padding-bottom: 170px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: $primary-white-color;
+}
+
 /*picture*/
 .comments-collage {
   display: flex;
@@ -22,6 +31,8 @@
 
 /*p*/
 .comments-description {
+  position: relative;
+  z-index: 2;
   width: 157px;
   font-family: DM Sans;
   font-style: normal;
@@ -30,11 +41,8 @@
   line-height: 255%;
   text-align: center;
   margin: 0px;
+
   color: $black-text-color;
-}
-.comments-description {
-  position: relative;
-  z-index: 1;
 }
 .comments-description::before {
   position: absolute;
@@ -50,7 +58,6 @@
 /*div*/
 .comments-home {
   padding-top: 30px;
-  padding-bottom: 86px;
 
   background-color: $primary-white-color;
 }
@@ -114,9 +121,11 @@
 }
 /*div*/
 .comments-text {
-  width: 280px;
+  position: relative;
+  width: 320px;
   height: 340px;
   padding: 43px 66px 26px 57px;
+  margin: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,17 +133,27 @@
   background-color: $coments-text-color;
 }
 
-.linear::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
+.gradientBox {
   position: absolute;
+  top: 15px;
   left: 0;
-  bottom: -3px;
-  border-radius: 2px;
-  background-color: $linear-color;
+  width: 100%;
+  height: 100%;
+  padding: 71px 50px 35px;
 }
-.line {
-  position: relative;
+.gradient {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-image: linear-gradient(
+    180deg,
+    #e1e1e1 1.61%,
+    #fafafa 0,
+    #fafafa 50%,
+    #e1e1e1 0,
+    #e1e1e1 51.61%,
+    #fafafa 0,
+    #fafafa
+  );
+  background-size: 62px 60px;
 }

@@ -357,11 +357,9 @@ h5 {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .preparation {
-    background-color: #FFF5F6;
-    text-align: center;
-  }
+.preparation {
+  background-color: #FFF5F6;
+  text-align: center;
 }
 
 .heading {

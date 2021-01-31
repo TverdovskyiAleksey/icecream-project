@@ -359,12 +359,15 @@ h5 {
 
 @media screen and (max-width: 320px) {
   .preparation {
+    width: 320px;
     background-color: #FFF5F6;
     text-align: center;
   }
 }
 
 .heading {
+  margin-right: auto;
+  margin-left: auto;
   display: inline-block;
   margin-top: 125px;
   font-family: Titan One;

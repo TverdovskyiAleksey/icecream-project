@@ -10,6 +10,17 @@ p {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 79px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 82px;
+
+    background-image: url(../images/location/drops@1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
 
 .locationContainer {
@@ -17,10 +28,31 @@ p {
   margin-top: -84px;
   max-width: 480px;
   padding: 0 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -78px;
+    max-width: 970px;
+    padding: 0 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -102px;
+    max-width: 100%;
+    padding: 0 115px;
+  }
 }
 
 .locationContainer .list {
   margin-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 86px;
+  }
 }
 
 .locationCard {
@@ -32,8 +64,32 @@ p {
   border-radius: 24px;
   text-align: left;
 
+  @media screen and (min-width: 768px) {
+    padding: 50px 31px;
+    width: calc((100% - 20px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px) / 3);
+    padding: 51px 44px 62px 43px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.locationCard + .locationCard {
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 31px;
   }
 }
 
@@ -51,6 +107,16 @@ p {
 
   color: $primary-white-color;
   background-color: $accent-coffee-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 
 .food {
@@ -66,6 +132,16 @@ p {
   letter-spacing: 0.04em;
   color: $black-text-color;
   font-family: $font-family-body;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 
 .locationText {
@@ -76,6 +152,16 @@ p {
   position: relative;
 
   color: $gray-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 64px;
+  }
 }
 
 .locationText::after,
@@ -88,13 +174,29 @@ p {
   left: 0;
   bottom: -25px;
   border-radius: 2px;
-  background-color: #e1e1e1;
+  background-color: $linear-color;
+
+  @media screen and (min-width: 768px) {
+    bottom: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: -32px;
+  }
 }
 
 .openingDays {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .openinHours {
@@ -102,15 +204,38 @@ p {
   font-size: 12px;
   line-height: 1.8;
   color: $title-pink-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .schedule {
   position: relative;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 64px;
+  }
 }
 
 .schedule .item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
 }
 
 .contactsItem {
@@ -119,10 +244,23 @@ p {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .buttons {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .locationButton {
@@ -149,13 +287,19 @@ p {
   background-color: $location-pink-color;
   margin-bottom: 10px;
 
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
   &:hover,
   &:focus {
-    background-color: $location-pink-color;
+    background-color: $hover-passion-button;
   }
 }
 
 .hoverButton {
+  transition: background-color 250ms $timing-function;
   &:hover,
   &:focus {
     background-color: $hover-button;

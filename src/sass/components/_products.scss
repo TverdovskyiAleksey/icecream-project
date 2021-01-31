@@ -33,10 +33,11 @@
         }
         &.decor{
             color: #fff;
-            font-size: 35px;
+            font-size: 25px;
             font-weight: 700;
             line-height: 1;
             margin-bottom: 30px;
+            letter-spacing: 2px;
         }
     }
     .title-products{
@@ -78,11 +79,14 @@
     
 }
 .products-cards{
-    width: 280px;
+    width: 100%;
     padding: 0px 20px 40px;
     border-radius: 15px;
     margin-bottom: 130px;
-
+  
+    @media screen and (min-width: 320px) {
+      width: 280px;
+    }
     @media screen and (min-width: 768px) {
         width: 220px;
         margin-right: 20px;
@@ -115,6 +119,7 @@
         background-color:$accent-green-color ;
     }
     .title-menu{
+        margin-bottom: 20px;
         font-family: $font-family-title;
         font-style: normal;
         font-weight: $font-weight-body;
@@ -161,12 +166,17 @@
     .products-images{
         display: inline-block;
         width: 100%;
-        margin-top: -130px;
+        margin-top: -205px;
         margin-bottom: 22px;
+        @media screen and (min-width: 0px) and (max-width: 767px){
+            margin-top: -110px;
+        }
         @media screen and (min-width: 768px) and (max-width: 1199px){
             width: 220px;
             height: 224px;
+            margin-top: -103px;
             margin-left: -8px;
+
         }
     }
 }
@@ -183,6 +193,7 @@
     line-height: 1.87;
     border: none;
     border-radius: 50%;
+    fill:$hover-passion-button;
     background-color: $primary-white-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms $timing-function;

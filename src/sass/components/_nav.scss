@@ -9,8 +9,12 @@ header {
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
         padding-top: 6px;
+        padding-left: 20px;
+    }
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+        padding-top: 37px;
         padding-left: 20px;
     }
 }
@@ -42,15 +46,30 @@ header {
         padding-top: 136px;
         background-color: $burger-pink-color;
         text-align: center;
-        filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
-
-        transform: translateX(120%);
-
+        
+        transform: translateX(100%);
+        
         transition: transform 250ms $timing-function;
-
+        
         &.is-open {
             transform: translateX(0);
+            filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
         }
+        &.is-open .btn-nav {
+
+            @media screen and (min-width: 768px) {
+                top: 60px;
+                right: 20px;
+                width: 186px;
+            }
+        }
+        // &.is-open header {
+        //     overflow: visible;
+        // }
+    }
+    @media screen and (min-width: 768px) {
+        width: 254px;
+        height: 1020px;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -83,6 +102,11 @@ header {
         background-color: $hover-button;
         cursor: pointer;
     }
+    @media screen and (min-width: 768px) {
+        top: 38px;
+        right: 279px;
+        width: 160px;
+    }
 }
 .buy {
     margin-left: 12px;
@@ -113,6 +137,9 @@ header {
 
     transition: background-color 250ms $timing-function, color 250ms $timing-function;
 
+    @media screen and (min-width: 768px) {
+        margin-right: 224px;
+    }
     .icon-close {
         display: none;
     }
@@ -128,6 +155,9 @@ header {
 
         &:hover, &:focus {
         background-color: $primary-passion-color;
+        }
+        @media screen and (min-width: 768px) {
+            right: -200px;
         }
 
     }

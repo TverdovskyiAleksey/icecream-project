@@ -473,10 +473,11 @@ header {
   z-index: 3;
   color: #ffffff;
   background-color: #ffa5ba;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-menu.is-open:hover, .nav-menu.is-open:focus {
   background-color: #d41443;
+  transform: rotate(90deg);
 }
 .nav-menu.is-open .icon-close {
   display: block;
@@ -630,6 +631,10 @@ header {
   display: none;
 }
 
+.products-section {
+  background-color: #ffffff;
+}
+
 .about-products {
   margin-left: auto;
   margin-right: auto;
@@ -670,7 +675,7 @@ header {
   }
 }
 .about-products .text-products.decor {
-  color: #fff;
+  color: #ffffff;
   font-size: 25px;
   font-weight: 700;
   line-height: 1;
@@ -825,7 +830,9 @@ header {
 }
 
 .about-btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   margin-right: auto;
@@ -842,6 +849,7 @@ header {
 }
 .about-btn:hover, .about-btn:focus {
   background-color: #ecebeb;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -992,7 +1000,7 @@ header {
 
 .total {
   text-align: left;
-  margin-left: 20px;
+  width: 230px;
 }
 
 .last {
@@ -1000,15 +1008,26 @@ header {
   display: inline-block;
 }
 
+.comments {
+  background-color: #ffffff;
+}
+
 .comments-conteiner {
   display: block;
-  margin: 0px;
+  margin-right: auto;
+  margin-left: auto;
   padding-bottom: 170px;
   padding-left: 0px;
   padding-right: 0px;
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 320px) {
+  .comments-conteiner {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /*picture*/
 .comments-collage {
   display: flex;
@@ -1018,6 +1037,16 @@ header {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .comments-collage {
+    padding-bottom: 119px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comments-collage {
+    padding-bottom: 123px;
+  }
+}
 /*picture*/
 .comments-photo {
   display: flex;
@@ -1027,6 +1056,16 @@ header {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .comments-photo {
+    padding-bottom: 19px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comments-photo {
+    padding-bottom: 15px;
+  }
+}
 .photo {
   border-radius: 50px;
 }
@@ -1043,9 +1082,44 @@ header {
   line-height: 255%;
   text-align: center;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .comments-description {
+    position: relative;
+    width: 544px;
+    height: 106px;
+    font-size: 14px;
+    line-height: 216%;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  .comments-description::before {
+    position: absolute;
+    top: -17px;
+    left: -40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comments-description {
+    position: relative;
+    width: 822px;
+    height: 74px;
+    font-size: 16px;
+    line-height: 186%;
+  }
+
+  .comments-description::before {
+    position: absolute;
+    top: -15px;
+    left: -37px;
+  }
+}
 .comments-description::before {
   position: absolute;
   content: "";
@@ -1064,6 +1138,16 @@ header {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .comments-home {
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comments-home {
+    padding-top: 15px;
+  }
+}
 /*h3*/
 .comments-address {
   font-family: DM Sans;
@@ -1077,6 +1161,11 @@ header {
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .comments-address {
+    padding-bottom: 35px;
+  }
+}
 /*ul*/
 .home-points {
   display: flex;
@@ -1085,6 +1174,16 @@ header {
   padding: 18px;
 }
 
+@media screen and (min-width: 768px) {
+  .home-points {
+    padding: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home-points {
+    padding: 15px;
+  }
+}
 /*li*/
 .points {
   width: 4px;
@@ -1138,6 +1237,28 @@ header {
   background-color: #fafafa;
 }
 
+@media screen and (min-width: 320px) {
+  .comments-text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comments-text {
+    position: relative;
+    width: 620px;
+    height: 164px;
+    padding: 30px 37px 28px 39px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comments-text {
+    position: relative;
+    width: 926px;
+    height: 138px;
+    padding: 32px 54px 32px 50px;
+  }
+}
 .gradientBox {
   position: absolute;
   top: 15px;
@@ -1147,6 +1268,18 @@ header {
   padding: 71px 50px 35px;
 }
 
+@media screen and (min-width: 768px) {
+  .gradientBox {
+    position: absolute;
+    padding: 47px 44px 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gradientBox {
+    position: absolute;
+    padding: 44px 35px 37px;
+  }
+}
 .gradient {
   width: 100%;
   height: 100%;
@@ -1166,6 +1299,24 @@ p {
   margin-left: auto;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .location {
+    padding-bottom: 79px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location {
+    padding-bottom: 82px;
+    background-image: url(/sectionbg2.394367da.png);
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .location .location {
+    background-image: url(/sectionbg2@2x.801d6d3d.png);
+  }
+}
 
 .locationContainer {
   display: inline-block;
@@ -1173,9 +1324,35 @@ p {
   max-width: 480px;
   padding: 0 50px;
 }
+@media screen and (min-width: 768px) {
+  .locationContainer {
+    margin-top: -78px;
+    max-width: 970px;
+    padding: 0 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationContainer {
+    margin-top: -102px;
+    max-width: 100%;
+    padding: 0 75px;
+  }
+}
 
 .locationContainer .list {
   margin-bottom: 54px;
+}
+@media screen and (min-width: 768px) {
+  .locationContainer .list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 81px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationContainer .list {
+    margin-bottom: 86px;
+  }
 }
 
 .locationCard {
@@ -1187,8 +1364,36 @@ p {
   border-radius: 24px;
   text-align: left;
 }
+@media screen and (min-width: 768px) {
+  .locationCard {
+    padding: 50px 31px;
+    width: calc((100% - 20px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationCard {
+    width: calc((100% - 30px) / 3);
+    padding: 51px 44px 62px 43px;
+  }
+}
 .locationCard:not(:last-child) {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .locationCard:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .locationCard + .locationCard {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationCard + .locationCard {
+    margin-left: 31px;
+  }
 }
 
 .cardTitle {
@@ -1204,6 +1409,18 @@ p {
   color: #ffffff;
   background-color: #f0d1a5;
 }
+@media screen and (min-width: 768px) {
+  .cardTitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cardTitle {
+    margin-bottom: 32px;
+  }
+}
 
 .food {
   background-color: #c2e297;
@@ -1218,6 +1435,18 @@ p {
   color: #000000;
   font-family: "DM Sans", sans-serif;
 }
+@media screen and (min-width: 768px) {
+  .locationName {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationName {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
 
 .locationText {
   margin-bottom: 50px;
@@ -1226,6 +1455,18 @@ p {
   line-height: 1.5;
   position: relative;
   color: #907e82;
+}
+@media screen and (min-width: 768px) {
+  .locationText {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationText {
+    font-size: 16px;
+    margin-bottom: 64px;
+  }
 }
 
 .locationText::after,
@@ -1240,11 +1481,33 @@ p {
   border-radius: 2px;
   background-color: #e1e1e1;
 }
+@media screen and (min-width: 768px) {
+  .locationText::after,
+.schedule .item::after {
+    bottom: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationText::after,
+.schedule .item::after {
+    bottom: -32px;
+  }
+}
 
 .openingDays {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .openingDays {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .openingDays {
+    font-size: 16px;
+  }
 }
 
 .openinHours {
@@ -1253,14 +1516,44 @@ p {
   line-height: 1.8;
   color: #ffa5ba;
 }
+@media screen and (min-width: 768px) {
+  .openinHours {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .openinHours {
+    font-size: 16px;
+  }
+}
 
 .schedule {
   position: relative;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .schedule {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .schedule {
+    margin-bottom: 64px;
+  }
+}
 
 .schedule .item:not(:last-child) {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .schedule .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .schedule .item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .contactsItem {
@@ -1270,9 +1563,25 @@ p {
   font-size: 12px;
   line-height: 1.5;
 }
+@media screen and (min-width: 768px) {
+  .contactsItem {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contactsItem {
+    font-size: 16px;
+  }
+}
 
 .buttons {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .locationButton {
@@ -1298,10 +1607,19 @@ p {
   background-color: #d41342;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .accentButton {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
 .accentButton:hover, .accentButton:focus {
-  background-color: #d41342;
+  background-color: #c7133e;
 }
 
+.hoverButton {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .hoverButton:hover, .hoverButton:focus {
   background-color: #ecebeb;
 }
@@ -1311,9 +1629,81 @@ p {
   margin-left: 14px;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal {
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  min-width: 300px;
+  z-index: 100;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    height: 400px;
+    min-width: 700px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 500px;
+    width: 900px;
+  }
+}
+
+.close {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: #d41342;
+  top: -14px;
+  right: -14px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close:hover, .close:focus {
+  color: #ffb8ca;
+}
+
+.closeLogo {
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.closeLogo:hover, .closeLogo:focus {
+  color: #ffb8ca;
+}
+
 .footer-container {
   padding-top: 57px;
-  background-color: #fff5f6;
   font-style: normal;
 }
 @media screen and (min-width: 768px) {
@@ -1565,12 +1955,13 @@ p {
 
 .footer {
   position: relative;
+  background-color: #fff5f6;
 }
 
 .footer::after {
   content: " ";
   position: absolute;
-  top: 321px;
+  top: 378px;
   display: inline-block;
   margin-bottom: 0px;
   width: 100%;
@@ -1579,12 +1970,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .footer::after {
-    top: 281px;
+    top: 338px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer::after {
-    top: 212px;
+    top: 269px;
   }
 }
 

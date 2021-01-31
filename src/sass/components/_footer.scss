@@ -1,6 +1,6 @@
 .footer-container {
   padding-top: 57px;
-  background-color: $footer-pink-color;
+
   font-style: normal;
 
   @media screen and (min-width: 768px) {
@@ -241,12 +241,13 @@
 
 .footer {
   position: relative;
+  background-color: $footer-pink-color;
 }
 
 .footer::after {
   content: ' ';
   position: absolute;
-  top: 321px;
+  top: 378px;
   display: inline-block;
 
   //   margin-top: 43px;
@@ -255,9 +256,9 @@
   height: 1px;
   background-color: #e1e1e1;
   @media screen and (min-width: 768px) {
-    top: 281px;
+    top: 338px;
   }
   @media screen and (min-width: 1200px) {
-    top: 212px;
+    top: 269px;
   }
 }

@@ -151,10 +151,11 @@ header {
         color: $primary-white-color;
         background-color: $title-pink-color;
 
-        transition: background-color 250ms $timing-function;
+        transition: background-color 250ms $timing-function, transform 250ms $timing-function;
 
         &:hover, &:focus {
         background-color: $primary-passion-color;
+        transform: rotate(90deg);
         }
         @media screen and (min-width: 768px) {
             right: -200px;

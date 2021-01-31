@@ -1,6 +1,6 @@
 .footer-container {
   padding-top: 57px;
-  background-color: $footer-pink-color;
+
   font-style: normal;
 
   @media screen and (min-width: 768px) {
@@ -241,6 +241,7 @@
 
 .footer {
   position: relative;
+  background-color: $footer-pink-color;
 }
 
 .footer::after {

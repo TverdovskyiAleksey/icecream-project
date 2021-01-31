@@ -357,11 +357,11 @@ h5 {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .preparation {
-    background-color: #FFF5F6;
-    text-align: center;
-  }
+.preparation {
+  background-color: #FFF5F6;
+  position: relative;
+  text-align: center;
+  width: 320px;
 }
 
 .heading {
@@ -406,7 +406,29 @@ h5 {
 
 .relative {
   position: absolute;
-  top: 750px;
+  top: 766px;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .relative {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .relative {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .relative {
+    display: block;
+    width: 1200px;
+    top: 342px;
+  }
 }
 
 .madetxt {

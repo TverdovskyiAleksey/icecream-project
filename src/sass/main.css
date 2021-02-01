@@ -99,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -1216,6 +1216,114 @@ header {
 .last {
   margin-bottom: 145px;
   display: inline-block;
+}
+
+.total {
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.total-item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .total-item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .total-item:not(:last-child) {
+    margin-right: 33px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .total-item {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .total-item {
+    width: 330px;
+  }
+}
+
+.preparation-icon {
+  margin-bottom: 16px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: #ffb8ca;
+}
+
+@media screen and (min-width: 768px) {
+  .preparation-icon {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .preparation-icon {
+    margin-bottom: 40px;
+  }
+}
+
+.indicators {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: "Titan One", cursive;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .indicators {
+    margin-bottom: 13px;
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .indicators {
+    margin-bottom: 15px;
+    font-size: 58px;
+  }
+}
+
+.indicatorstxt {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .indicatorstxt {
+    font-size: 14px;
+    width: 180px;
+    margin-bottom: 142px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .indicatorstxt {
+    font-size: 16px;
+  }
 }
 
 .comments {

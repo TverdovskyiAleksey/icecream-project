@@ -406,7 +406,7 @@ p {
   }
 
   @media screen and (min-width: 1200px) {
-    height: 500px;
+    height: 600px;
     min-width: 620px;
   }
 }
@@ -559,4 +559,50 @@ p {
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
+}
+
+.franchiseButton {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  min-width: 100px;
+  min-height: 30px;
+
+  font-family: $font-family-body;
+  font-size: 12px;
+  line-height: 1.31;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $location-pink-color;
+  border-radius: 22px;
+  border: 0 solid transparent;
+  cursor: pointer;
+  transition: scale 250ms $timing-function, box-shadow 250ms $timing-function;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-top: 30px;
+    min-width: 110px;
+    min-height: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-top: 40px;
+    min-width: 120px;
+    min-height: 50px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.09);
+    box-shadow: 0px 0px 18px $hover-passion-button;
+  }
+}
+
+.btn {
+  display: block;
+  text-align: center;
 }

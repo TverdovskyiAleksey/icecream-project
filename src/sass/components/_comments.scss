@@ -297,7 +297,6 @@
 
 .slick-dots li {
   list-style: none;
-  margin-right: 10px;
 }
 
 .slick-dots li:not(:last-child) {
@@ -311,6 +310,7 @@
   height: 12px;
   border: none;
   border-radius: 50%;
+  outline: none;
 }
 
 .slick-dots li.slick-active button {

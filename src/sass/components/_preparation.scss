@@ -3,6 +3,12 @@
   position: relative;
   text-align: center;
   width: 320px;
+  // @media screen and (max-width: 767px) {
+  //   // width: 100%;
+  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
 
 .heading {
@@ -14,6 +20,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $title-pink-color;
+  @media screen and (min-width: 768px) {
+    width: 285px;
+  }
 }
 
 .made {
@@ -22,24 +31,38 @@
   margin-left: auto;
   margin-right: auto;
   font-family: Titan One;
+  font-weight: 400;
   font-size: 34px;
   line-height: 39px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $primary-passion-color;
+  @media screen and (min-width: 768px) {
+    width: 429px;
+    margin-top: 16px;
+  }
 }
 .trademark {
   margin-top: 26px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and(min-width:768px) {
+    margin-top: 50px;
+  }
 }
 
-.img-icon {
+// .img-icon {
+//   margin-top: 38px;
+//   // margin-right: auto;
+//   // margin-left: auto;
+// }
+.preparation-icon {
   margin-top: 38px;
-  // margin-right: auto;
-  // margin-left: auto;
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: $hero-pink-color;
 }
 .milk {
   margin-right: auto;
@@ -73,6 +96,11 @@
   font-size: 12px;
   line-height: 162%;
   color: $black-text-color;
+  @media screen and(min-width:768px) {
+    width: 340px;
+    display: inline;
+    font-size: 14px;
+  }
 }
 .made-text {
   margin-top: 47px;
@@ -85,11 +113,30 @@
   line-height: 162%;
   color: #907e82;
   text-align: left;
+
+  @media screen and(min-width:768px) {
+    margin-left: 17px;
+    margin-right: 0px;
+    width: 340px;
+    height: 79px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+    margin-top: 100px;
+  }
 }
+
+@media screen and(min-width:768px) {
+  .Curabitur {
+    display: block;
+    margin-top: 49px;
+  }
+}
+
 .text {
   width: 220px;
-  margin-right: auto;
-  margin-left: auto;
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
@@ -98,6 +145,9 @@
   display: block;
   margin-top: 10px;
   text-align: left;
+  @media screen and(min-width:768px) {
+    width: 340px;
+  }
 }
 .button {
   margin-top: 47px;
@@ -116,7 +166,20 @@
   border-radius: 22px;
   border: solid $primary-white-color;
   background-color: $primary-white-color;
+  @media screen and(min-width:768px) {
+    margin-top: 10px;
+    position: absolute;
+    top: 600px;
+    left: 370px;
+  }
 }
+
+@media screen and(min-width:768px) {
+  .tablet {
+    display: flex;
+  }
+}
+
 .indicators {
   display: inline-block;
   font-family: Titan One;
@@ -141,4 +204,79 @@
 .last {
   margin-bottom: 145px;
   display: inline-block;
+}
+.total {
+  text-align: left;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.total-item:not(:last-child) {
+  margin-bottom: 38px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 33px;
+  }
+}
+
+.total-item {
+  @media screen and (min-width: 768px) {
+    width: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+  }
+}
+
+.preparation-icon {
+  margin-bottom: 16px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: $hero-pink-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.indicators {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: $font-family-title;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-passion-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+    font-size: 58px;
+  }
+}
+
+.indicatorstxt {
+  font-family: $font-family-body;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: $black-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    width: 180px;
+    margin-bottom: 142px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }

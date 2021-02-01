@@ -72,6 +72,22 @@
       letter-spacing: 0.04em;
     }
 
+    
+}
+.products-cards{
+    width: 100%;
+    padding: 0px 20px 40px;
+    border-radius: 15px;
+    margin-bottom: 130px;
+    
+    &:last-child{
+        margin-bottom: 0px;
+        }
+
+    @media screen and (min-width: 320px) {
+      width: 280px;
+
+
     &.decor {
       color: $primary-white-color;
       font-size: 25px;
@@ -79,6 +95,7 @@
       line-height: 1;
       margin-bottom: 30px;
       letter-spacing: 2px;
+
     }
   }
   .title-products {
@@ -108,7 +125,9 @@
       line-height: 66px;
       letter-spacing: 0.06em;
     }
-  }
+
+
+    
 }
 .products-menu {
   @media screen and (min-width: 768px) {
@@ -150,15 +169,18 @@
   &:last-child {
     margin-bottom: 0px;
   }
-  &.ice-cream {
-    background-color: $title-pink-color;
-  }
-  &.ice-coffee {
-    background-color: $accent-coffee-color;
-  }
-  &.milkshakes {
-    background-color: $accent-green-color;
-  }
+  &.ice-cream{
+        background-color:$title-pink-color ;
+        box-shadow: 0px 6px 6px rgba(255, 165, 186, 0.45);
+    }
+    &.ice-coffee{
+        background-color:$accent-coffee-color ;
+        box-shadow: 0px 6px 6px rgba(240, 209, 165, 0.45);
+    }
+    &.milkshakes{
+        background-color:$accent-green-color ;
+        box-shadow: 0px 6px 6px rgba(194, 226, 151, 0.45);
+    }
   .title-menu {
     margin-bottom: 20px;
     font-family: $font-family-title;
@@ -174,6 +196,7 @@
     color: $primary-white-color;
 
     @media screen and (min-width: 768px) {
+
     }
     @media screen and (min-width: 1200px) {
       font-size: 30px;

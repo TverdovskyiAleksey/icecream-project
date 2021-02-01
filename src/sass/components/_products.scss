@@ -166,7 +166,7 @@
         }
         
     }
-     #products-images{
+     .products-images{
         display: inline-block;
         width: 100%;
         margin-top: -205px;
@@ -175,6 +175,7 @@
             margin-top: -110px;
         }
         @media screen and (min-width: 768px) and (max-width: 1199px){
+            max-width: 220px;
             width: 220px;
             height: 224px;
             margin-top: -103px;

@@ -1,9 +1,29 @@
 
  <div class="preparation container">
-        <b class="heading">tradition and love</b> 
+        <span class="heading">tradition and love</span> 
            <h2 class="made">how it’s made?</h2>
-             <img class="trademark" src="./images/preparation-mobil/trademark.png" alt="корова и молоко">
-    
+                <picture>
+                <source srcset="
+                ./images/preparation-desctop/trademark.png 1x,
+                ./images/preparation-desctop/trademark@2x.png 2x"
+                media= "(min-width:1200px)"
+                type="image/png" >
+                
+                <source srcset="
+                ./images/preparation-tablet/trademark.png 1x,
+                    ./images/preparation-tablet/trademark@2x.png 2x"
+                media="(min-width:768px)"
+                type="image/png" > 
+
+                <source srcset="
+                ./images/preparation-mobil/trademark.png 1x,
+                ./images/preparation-mobil/trademark@2x.png 2x"
+                media="(max-width:767px)"
+                
+                type="image/png" >
+
+                <img class="trademark" src="./images/preparation-mobil/trademark.png" alt="корова и молоко">
+            </picture>
        
              <p class="made-text">
                  <span class="madetxt" >
@@ -23,32 +43,40 @@
                 <img class="milk relative" src="./images/preparation-mobil/sectionbg.png" alt="фон молока">
             
             
+    <ul class="total">
+        <li>
+            <svg class="preparation-icon">
+                <use href="./images/sprite.svg#icon-milk">
+                </use>
+            </svg>
+            <span class="indicators">721</span>
+            <p class="indicatorstxt">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+        </li>
     
-            <ul  class="total">
-                 <li>
-                    <img class="img-icon" src="./images/preparation-mobil/icon1.png" alt="стакан">
-                     <span class="indicators">721</span> 
-                    <p class="indicatorstxt">
-                     Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                     </p>  
-                </li>
-           
-                <li>
-                     <img class="img-icon" src="./images/preparation-mobil/icon2.png" alt="корзина с яблоками">
-                     <span class="indicators">16kg</span>   
-                     <p class="indicatorstxt">
-                     Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                     </p>
-                 </li>
-            
-                 <li class="last" >
-                    <img class="img-icon" src="./images/preparation-mobil/icon3.png" alt="мороженое">
-                     <span class="indicators">84</span>  
-                    <p class="indicatorstxt">
-                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                    </p>
-                </li>
-            </ul>
+        <li>
+            <svg class="preparation-icon">
+                <use href="./images/sprite.svg#icon-apples">
+                </use>
+            </svg>
+            <span class="indicators">16kg</span>
+            <p class="indicatorstxt">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+        </li>
+    
+        <li class="last">
+            <svg class="preparation-icon">
+                <use href="./images/sprite.svg#icon-ice-cream">
+                </use>
+            </svg>
+            <span class="indicators">84</span>
+            <p class="indicatorstxt">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+        </li>
+    </ul>
        
 </div>
 

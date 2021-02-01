@@ -1143,19 +1143,20 @@ header {
     letter-spacing: 0.04em;
   }
 }
-.products-cards .text-menu .products-images {
+
+.products-images {
   display: inline-block;
   width: 100%;
   margin-top: -205px;
   margin-bottom: 22px;
 }
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .products-cards .text-menu .products-images {
+@media screen and (max-width: 767px) {
+  .products-images {
     margin-top: -110px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .products-cards .text-menu .products-images {
+  .products-images {
     max-width: 220px;
     width: 220px;
     height: 224px;

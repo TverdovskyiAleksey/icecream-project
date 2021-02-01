@@ -1513,13 +1513,25 @@ header {
 }
 
 .comments-conteiner {
+  position: relative;
   display: block;
+  padding-top: 154px;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 170px;
   padding-left: 0px;
   padding-right: 0px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .comments-conteiner {
+    padding-top: 279px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comments-conteiner {
+    padding-top: 382px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -1530,21 +1542,23 @@ header {
 }
 /*picture*/
 .comments-collage {
+  position: absolute;
+  top: -5%;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 80px;
   background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
   .comments-collage {
-    padding-bottom: 119px;
+    top: -12%;
   }
 }
 @media screen and (min-width: 1200px) {
   .comments-collage {
-    padding-bottom: 123px;
+    top: -17%;
   }
 }
 /*picture*/
@@ -1627,9 +1641,14 @@ header {
   height: 40px;
   display: block;
   top: -15px;
-  left: 4px;
+  left: -4px;
   background-image: url(/img2-mobile@1x.3dc48dc6.svg);
   z-index: -2;
+}
+@media screen and (min-width: 1200px) {
+  .comments-description::before {
+    left: -15px;
+  }
 }
 
 /*div*/
@@ -1727,10 +1746,10 @@ header {
 /*div*/
 .comments-text {
   position: relative;
-  width: 320px;
+  width: 280px;
   height: 340px;
   padding: 43px 66px 26px 57px;
-  margin: 0px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1778,6 +1797,7 @@ header {
   .gradientBox {
     position: absolute;
     padding: 44px 35px 37px;
+    top: 25px;
   }
 }
 .gradient {

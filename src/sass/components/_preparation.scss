@@ -1,8 +1,13 @@
-.preparation {
+.test {
   background-color: $footer-pink-color;
+}
+
+.preparation {
   position: relative;
   text-align: center;
   width: 320px;
+  padding-bottom: 145px;
+
   // @media screen and (max-width: 767px) {
   //   // width: 100%;
   // }
@@ -274,7 +279,7 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     width: 180px;
-    margin-bottom: 142px;
+    padding-bottom: 145px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;

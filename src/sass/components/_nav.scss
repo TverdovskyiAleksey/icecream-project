@@ -33,6 +33,12 @@ header {
     .img-logo {
         margin-right: 20px;
     }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: 38px;
+        left: 45px;
+    }
 }
 
 .burger-menu {
@@ -54,6 +60,8 @@ header {
         &.is-open {
             transform: translateX(0);
             filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+
+
         }
         &.is-open .btn-nav {
 
@@ -62,20 +70,31 @@ header {
                 right: 20px;
                 width: 186px;
             }
+
         }
+        &.is-open .btn-nav {
+            &:hover {
+                background-color: rgba(254, 165, 187, 0.7);
+                transform: scale(0.91);
+        }
+    }
     }
     @media screen and (min-width: 768px) {
         width: 254px;
         height: 1020px;
     }
     @media screen and (min-width: 1200px) {
+
+        margin-top: 51px;
+        margin-left: 354px;
+
         display: flex;
         width: 100%;
         align-items: center;
+
     }
 }
 .btn-nav {
-    // width: 159px;
     position: absolute;
     top: 60px;
     right: 20px;
@@ -93,19 +112,35 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 250ms $timing-function, translate 250ms $timing-function, box-shadow 250ms $timing-function;
     
     &:hover {
-        background-color: $hover-button;
+        background-color: transparent;
+        transform: scale(1.09);
+        box-shadow: 0px 5px 18px $hover-passion-button;
         cursor: pointer;
     }
+
+    
+    @media screen and (min-width: 1200px) {
+        width: 159px;
+        top: 39px;
+        right: 116px;
+
     @media screen and (min-width: 768px) {
         top: 38px;
         right: 279px;
         width: 160px;
+
     }
 }
 .buy {
     margin-left: 12px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 11px;
+    }
 }
 .nav-menu {
     width: 22px;
@@ -113,11 +148,11 @@ header {
     padding: 0;
     margin-left: auto;
     margin-right: 20px;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     background-color: $title-pink-color;
     color: $primary-passion-color;
     border-radius: 50%;
@@ -125,17 +160,21 @@ header {
     outline: transparent;
     cursor: pointer;
     overflow: hidden;
-
+    
     &:hover, &:focus {
         background-color: $primary-passion-color;
         color: $primary-white-color;
     }
-
+    
     transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+    
+
 
     @media screen and (min-width: 768px) {
         margin-right: 224px;
     }
+
     .icon-close {
         display: none;
     }
@@ -146,35 +185,39 @@ header {
         z-index: 3;
         color: $primary-white-color;
         background-color: $title-pink-color;
-
+        
         transition: background-color 250ms $timing-function, transform 250ms $timing-function;
-
+        
         &:hover, &:focus {
-        background-color: $primary-passion-color;
-        transform: rotate(90deg);
+            background-color: $primary-passion-color;
+            transform: rotate(90deg);
         }
+
+        
+
         @media screen and (min-width: 768px) {
             right: -200px;
         }
 
+
     }
     &.is-open .icon-close {
         display: block;
-
+        
         width: 16px;
         height: 16px;
         padding: 0;
-
+        
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         background-color: transparent;
         border: 1px solid transparent;
         outline: transparent;
         cursor: pointer;
-
-    transition: background-color 250ms $timing-function;
+        
+        transition: background-color 250ms $timing-function;
     }
     &.is-open .icon-menu {
         display: none;
@@ -189,10 +232,16 @@ header {
 }
 
 .site-nav {
-
+    
     @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: $hero-pink-color;
     }
         
         .item {
@@ -209,6 +258,11 @@ header {
                 }
             }
         }
+        .item + .item {
+            @media screen and (min-width: 1200px) {
+                margin-left: 35px;
+            }
+        }
 
     .link {
         font-family: $font-family-body;
@@ -218,7 +272,33 @@ header {
         color: $primary-white-color;
 
         &:hover, &:focus {
-            color:$primary-passion-color
+            color: $primary-passion-color;
         }
     }
 }
+.arrow {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    margin: 0;
+    padding: 0;
+    border: transparent;
+    outline: transparent;
+    border-radius: 50%;
+
+    cursor: pointer;
+    color: $primary-passion-color;
+    background-color: rgba(128, 128, 128, 0.2);
+
+    &:hover, &:focus {
+        color: $title-pink-color ;
+    }
+}
+.arrow-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }

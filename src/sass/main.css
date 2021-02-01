@@ -1074,44 +1074,6 @@ header {
   }
 }
 
-.about-products .text-products .text-products {
-  display: block;
-  margin-bottom: 15px;
-  font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-}
-
-@media screen and (min-width: 768px) {
-  .about-products .text-products .text-products {
-    font-size: 26px;
-    line-height: 30px;
-    letter-spacing: 0em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about-products .text-products .text-products {
-    font-size: 30px;
-    line-height: 34px;
-    letter-spacing: 0.04em;
-  }
-}
-
-.about-products .text-products .text-products.decor {
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 30px;
-  letter-spacing: 5px;
-}
-
 @media screen and (min-width: 1200px) {
   .about-products .text-products {
     font-size: 30px;
@@ -1126,7 +1088,7 @@ header {
   font-weight: 700;
   line-height: 1;
   margin-bottom: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 .about-products .title-products {
@@ -1183,6 +1145,10 @@ header {
   margin-bottom: 130px;
 }
 
+.products-cards:last-child {
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 320px) {
   .products-cards {
     width: 280px;
@@ -1212,20 +1178,22 @@ header {
   }
 }
 
-.products-cards:last-child {
-  margin-bottom: 0px;
-}
-
 .products-cards.ice-cream {
   background-color: #ffa5ba;
+  -webkit-box-shadow: 0px 6px 6px rgba(255, 165, 186, 0.45);
+          box-shadow: 0px 6px 6px rgba(255, 165, 186, 0.45);
 }
 
 .products-cards.ice-coffee {
   background-color: #f0d1a5;
+  -webkit-box-shadow: 0px 6px 6px rgba(240, 209, 165, 0.45);
+          box-shadow: 0px 6px 6px rgba(240, 209, 165, 0.45);
 }
 
 .products-cards.milkshakes {
   background-color: #c2e297;
+  -webkit-box-shadow: 0px 6px 6px rgba(194, 226, 151, 0.45);
+          box-shadow: 0px 6px 6px rgba(194, 226, 151, 0.45);
 }
 
 .products-cards .title-menu {
@@ -1264,7 +1232,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .products-cards .text-menu {
-    padding: 0px;
+    padding: 0px 40px;
   }
 }
 
@@ -1276,34 +1244,7 @@ header {
   }
 }
 
-.products-cards .text-menu .text-menu {
-  margin: 30px 0px;
-  padding: 0 40px;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 152%;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .products-cards .text-menu .text-menu {
-    padding: 0px 40px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .products-cards .text-menu .text-menu {
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 0.04em;
-  }
-}
-
-.products-cards .text-menu .products-images {
+.products-cards .products-images {
   display: inline-block;
   width: 100%;
   margin-top: -205px;
@@ -1311,13 +1252,13 @@ header {
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  .products-cards .text-menu .products-images {
+  .products-cards .products-images {
     margin-top: -110px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .products-cards .text-menu .products-images {
+  .products-cards .products-images {
     max-width: 220px;
     width: 220px;
     height: 224px;
@@ -1377,6 +1318,12 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .preparation {
+    width: 1200px;
+  }
+}
+
 .heading {
   display: inline-block;
   margin-top: 125px;
@@ -1391,6 +1338,18 @@ header {
 @media screen and (min-width: 768px) {
   .heading {
     width: 285px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    font-family: Titan One;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 351px;
   }
 }
 
@@ -1416,6 +1375,18 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .made {
+    font-family: Titan One;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    width: 534px;
+  }
+}
+
 .trademark {
   margin-top: 26px;
   margin-right: auto;
@@ -1425,6 +1396,13 @@ header {
 @media screen and (min-width: 768px) {
   .trademark {
     margin-top: 50px;
+    margin-bottom: 166px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .trademark {
+    margin-bottom: 39px;
   }
 }
 
@@ -1465,6 +1443,7 @@ header {
     display: block;
     width: 1200px;
     top: 342px;
+    left: 0px;
   }
 }
 
@@ -1483,6 +1462,18 @@ header {
     width: 340px;
     display: inline;
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .madetxt {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    width: 463px;
   }
 }
 
@@ -1514,6 +1505,18 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .made-text {
+    margin-left: 74px;
+    width: 463px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .Curabitur {
     display: block;
@@ -1536,6 +1539,17 @@ header {
 @media screen and (min-width: 768px) {
   .text {
     width: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -1564,7 +1578,16 @@ header {
     margin-top: 10px;
     position: absolute;
     top: 600px;
-    left: 370px;
+    left: 393px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    margin-top: 10px;
+    position: absolute;
+    top: 650px;
+    left: 600px;
   }
 }
 
@@ -1614,6 +1637,12 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .total {
+    margin-left: 115px;
   }
 }
 
@@ -1709,7 +1738,12 @@ header {
 
 @media screen and (min-width: 1200px) {
   .indicatorstxt {
+    width: 330px;
+    font-family: DM Sans;
+    font-weight: bold;
     font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -2612,7 +2646,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .modalFranchise {
-    height: 500px;
+    height: 600px;
     min-width: 620px;
   }
 }
@@ -2844,6 +2878,63 @@ p {
   .textarea::placeholder {
     font-size: 16px;
   }
+}
+
+.franchiseButton {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  min-width: 100px;
+  min-height: 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.31;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #d41342;
+  border-radius: 22px;
+  border: 0 solid transparent;
+  cursor: pointer;
+  -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .franchiseButton {
+    font-size: 14px;
+    margin-top: 30px;
+    min-width: 110px;
+    min-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .franchiseButton {
+    font-size: 16px;
+    margin-top: 40px;
+    min-width: 120px;
+    min-height: 50px;
+  }
+}
+
+.franchiseButton:hover, .franchiseButton:focus {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  -webkit-box-shadow: 0px 0px 18px #c7133e;
+          box-shadow: 0px 0px 18px #c7133e;
+}
+
+.btn {
+  display: block;
+  text-align: center;
 }
 
 .footer-container {

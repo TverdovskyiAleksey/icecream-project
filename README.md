@@ -36,7 +36,9 @@ sudo apt-get install gcc g++ make
 npm install
 ```
 
+
 И запустить режим разработки.
+
 
 ```shell
 npm run dev

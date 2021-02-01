@@ -1,27 +1,56 @@
 .preparation {
+  // position: relative;
   background-color: $footer-pink-color;
-  position: relative;
+  padding-bottom: 97px;
+  @media screen and(min-width:768px) {
+    padding-bottom: 140px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-bottom: 140px;
+  }
+}
+.preparation-container {
+  padding-top: 125px;
   text-align: center;
-  width: 320px;
+  position: relative;
+  @media screen and(min-width:768px) {
+    padding-top: 130px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 125px;
+  }
 }
 
 .heading {
   display: inline-block;
-  margin-top: 125px;
-  font-family: Titan One;
+  width: 200px;
+  margin-bottom: 15px;
+  font-family: $font-family-title;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: $title-pink-color;
+  @media screen and(min-width:768px) {
+    width: 285px;
+    margin-bottom: 16px;
+    font-size: 26px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 351px;
+    margin-bottom: 15px;
+
+    font-size: 30px;
+  }
 }
 
 .made {
-  width: 200px;
-  margin-top: 15px;
+  margin-bottom: 26px;
   margin-left: auto;
   margin-right: auto;
-  font-family: Titan One;
+  width: 200px;
+
+  font-family: $font-family-title;
   font-size: 34px;
   line-height: 39px;
   text-align: center;
@@ -29,28 +58,27 @@
   text-transform: uppercase;
 
   color: $primary-passion-color;
-}
-.trademark {
-  margin-top: 26px;
-  margin-right: auto;
-  margin-left: auto;
+
+  @media screen and(min-width:768px) {
+    width: 431px;
+    margin-bottom: 50px;
+    font-size: 48px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 534px;
+    margin-bottom: 55px;
+    font-size: 58px;
+  }
 }
 
-.img-icon {
-  margin-top: 38px;
-  // margin-right: auto;
-  // margin-left: auto;
-}
-.milk {
-  margin-right: auto;
-  margin-left: auto;
-}
-.relative {
+.milk-relative {
   position: absolute;
   // top: 750px;
   top: 766px;
   left: 0;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   @media screen and(min-width:320px) {
     width: 320px;
   }
@@ -64,81 +92,184 @@
   }
 }
 
+.preparation-paragraph {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.trademark {
+  margin-right: auto;
+  margin-left: auto;
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+    width: 340px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 17px;
+    width: 516px;
+  }
+}
+
 .madetxt {
-  display: inline-block;
-  // margin-top: 46px;
-  margin-bottom: 26px;
-  font-family: DM Sans;
+  width: 220px;
+  // display: inline-block;
+
+  margin-bottom: 35px;
+  font-family: $font-family-body;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
   color: $black-text-color;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: start;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    font-size: 16px;
+    line-height: 176%;
+  }
 }
+
 .made-text {
-  margin-top: 47px;
+  margin-bottom: 20px;
   width: 220px;
   margin-right: auto;
   margin-left: auto;
-  font-family: DM Sans;
+  font-family: $font-family-body;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
-  color: #907e82;
+  color: $gray-text-color;
   text-align: left;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 45px;
+    width: 463px;
+    font-size: 14px;
+    line-height: 194%;
+  }
 }
-.text {
-  width: 220px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 162%;
-  color: #907e82;
-  display: block;
-  margin-top: 10px;
-  text-align: left;
+
+.made-text-1 {
+  display: inline-block;
+  padding-top: 20px;
 }
-.button {
-  margin-top: 47px;
+
+.preparation-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 39px;
   width: 176px;
   height: 44px;
-  font-family: DM Sans;
-  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: $font-family-body;
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  // display: flex;
-  align-items: center;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   color: $primary-passion-color;
   border-radius: 22px;
   border: solid $primary-white-color;
   background-color: $primary-white-color;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 66px;
+  }
 }
+
+.preparation-button-icon {
+  display: block;
+  width: 8px;
+  height: 16px;
+  margin-left: 14px;
+  fill: $primary-passion-color;
+}
+
+.total {
+  text-align: left;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.total-item:not(:last-child) {
+  margin-bottom: 38px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 33px;
+  }
+}
+
+.total-item {
+  @media screen and (min-width: 768px) {
+    width: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+  }
+}
+
+.preparation-icon {
+  margin-bottom: 16px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: $hero-pink-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
 .indicators {
   display: inline-block;
-  font-family: Titan One;
+  margin-bottom: 10px;
+  font-family: $font-family-title;
   font-size: 36px;
   line-height: 41px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-top: 16px;
-  color: #d41443;
+  color: $primary-passion-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+    font-size: 58px;
+  }
 }
+
 .indicatorstxt {
-  font-family: DM Sans;
-  font-weight: bold;
+  font-family: $font-family-body;
+  font-weight: 700;
   font-size: 12px;
   line-height: 170%;
-  color: #000000;
-}
-.total {
-  text-align: left;
-  width: 230px;
-}
-.last {
-  margin-bottom: 145px;
-  display: inline-block;
+  color: $black-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }

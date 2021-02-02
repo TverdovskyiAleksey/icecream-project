@@ -231,7 +231,7 @@
     left: 393px;
   }
   @media screen and(min-width:1200px) {
-    margin-top: 45px;
+    margin-top: 0px;
     position: absolute;
     top: 650px;
     left: 600px;
@@ -357,4 +357,7 @@
     line-height: 176%;
     letter-spacing: 0.02em;
   }
+}
+.bnt-svg {
+  margin-left: 12px;
 }

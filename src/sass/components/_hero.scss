@@ -114,7 +114,10 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  // box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  transform: scale(1.09);
+  box-shadow: 0px 5px 18px $hover-passion-button;
 }
 
 .hero-btn-products {
@@ -127,12 +130,6 @@
   }
 }
 
-.hero-btn-products:hover,
-.hero-btn-products:focus {
-  background-color: $hover-passion-button;
-  color: $primary-white-color;
-}
-
 .hero-btn-how-made {
   width: 83px;
   background-color: $primary-white-color;
@@ -140,12 +137,6 @@
   @media screen and(min-width:1200px) {
     width: 138px;
   }
-}
-
-.hero-btn-how-made:hover,
-.hero-btn-how-made:focus {
-  background-color: $hover-button;
-  color: $primary-passion-color;
 }
 
 .hero-description-container {
@@ -201,6 +192,12 @@
     margin-top: 20px;
     margin-left: 30px;
   }
+}
+
+.hero-icon-thumb:hover {
+  background-color: transparent;
+  transform: scale(1.09);
+  box-shadow: 0px 5px 18px $hover-passion-button;
 }
 
 .hero-icon-arrow {

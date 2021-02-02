@@ -11,21 +11,12 @@
   background-color: $primary-white-color;
 }
 
-@media screen and (min-width: 320px) {
-  .comments-conteiner {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 /*picture*/
 .comments-collage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 80px;
-
   background-color: $primary-white-color;
 }
+
 @media screen and (min-width: 768px) {
   .comments-collage {
     padding-bottom: 119px;
@@ -216,10 +207,11 @@
 /*div*/
 .comments-text {
   position: relative;
-  width: 320px;
+  width: 280px;
   height: 340px;
   padding: 43px 66px 26px 57px;
-  margin: 0px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;

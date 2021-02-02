@@ -10,6 +10,8 @@ p {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  position: relative;
+
   @media screen and (min-width: 768px) {
     padding-bottom: 79px;
   }
@@ -69,6 +71,14 @@ p {
   box-shadow: $shadow-card;
   border-radius: 24px;
   text-align: left;
+
+  transition: scale 250ms $timing-function, box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.04);
+    box-shadow: 0px 5px 18px $hover-passion-button;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 50px 31px;
@@ -271,7 +281,7 @@ p {
 
 .locationButton {
   font-family: DM Sans;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 
@@ -286,12 +296,20 @@ p {
   border-radius: 22px;
   border: 0 solid transparent;
   cursor: pointer;
+  transition: scale 250ms $timing-function, box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.09);
+    box-shadow: 0px 5px 18px $hover-passion-button;
+  }
 }
 
 .accentButton {
   color: $primary-white-color;
   background-color: $location-pink-color;
   margin-bottom: 10px;
+  transition: background-color 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
     margin-right: 15px;
@@ -308,7 +326,7 @@ p {
   transition: background-color 250ms $timing-function;
   &:hover,
   &:focus {
-    background-color: $hover-button;
+    background-color: transparent;
   }
 }
 
@@ -328,14 +346,15 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms $timing-function;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal,
+.backdrop.is-hidden .modalFranchise {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -352,7 +371,7 @@ p {
 
   transform: translate(-50%, -50%) scale(1);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
     height: 400px;
@@ -361,7 +380,34 @@ p {
 
   @media screen and (min-width: 1200px) {
     height: 500px;
-    width: 900px;
+    min-width: 900px;
+  }
+}
+
+.modalFranchise {
+  padding: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 455px;
+  min-width: 296px;
+  z-index: 100;
+
+  background-color: $footer-pink-color;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform 250ms $timing-function;
+
+  @media screen and (min-width: 768px) {
+    height: 530px;
+    min-width: 510px;
+    padding: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    min-width: 620px;
   }
 }
 
@@ -379,21 +425,184 @@ p {
   border-radius: 50%;
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms $timing-function, scale 250ms $timing-function;
 
   &:hover,
   &:focus {
     color: $hero-pink-color;
+    transform: scale(1.2);
   }
 }
 
 .closeLogo {
   fill: currentColor;
+}
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.formTitle {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-passion-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 14px;
+  }
+}
+
+.form-input {
+  height: 27px;
+  padding: 6px 9px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: $primary-passion-color;
+
+  transition: border 250ms $timing-function;
+
+  &:focus {
+    outline: 0;
+    border: 1px solid $social-pink-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 34px;
+  }
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $primary-passion-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+}
+
+.form-comment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+  }
+}
+
+.textarea {
+  width: 100%;
+  height: 90px;
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  resize: none;
+  color: $primary-passion-color;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: 0;
+    border: 1px solid $social-pink-color;
+  }
+}
+
+.textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(235, 140, 187, 0.5);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.franchiseButton {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  min-width: 100px;
+  min-height: 30px;
+
+  font-family: $font-family-body;
+  font-size: 12px;
+  line-height: 1.31;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $location-pink-color;
+  border-radius: 22px;
+  border: 0 solid transparent;
+  cursor: pointer;
+  transition: scale 250ms $timing-function, box-shadow 250ms $timing-function;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-top: 30px;
+    min-width: 110px;
+    min-height: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-top: 40px;
+    min-width: 120px;
+    min-height: 50px;
+  }
 
   &:hover,
   &:focus {
-    color: $hero-pink-color;
+    transform: scale(1.09);
+    box-shadow: 0px 0px 18px $hover-passion-button;
   }
+}
+
+.btn {
+  display: block;
+  text-align: center;
 }

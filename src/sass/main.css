@@ -1126,7 +1126,7 @@ header {
   font-weight: 700;
   line-height: 1;
   margin-bottom: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 .about-products .title-products {
@@ -1183,6 +1183,10 @@ header {
   margin-bottom: 130px;
 }
 
+.products-cards:last-child {
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 320px) {
   .products-cards {
     width: 280px;
@@ -1212,20 +1216,22 @@ header {
   }
 }
 
-.products-cards:last-child {
-  margin-bottom: 0px;
-}
-
 .products-cards.ice-cream {
   background-color: #ffa5ba;
+  -webkit-box-shadow: 0px 6px 6px rgba(255, 165, 186, 0.45);
+          box-shadow: 0px 6px 6px rgba(255, 165, 186, 0.45);
 }
 
 .products-cards.ice-coffee {
   background-color: #f0d1a5;
+  -webkit-box-shadow: 0px 6px 6px rgba(240, 209, 165, 0.45);
+          box-shadow: 0px 6px 6px rgba(240, 209, 165, 0.45);
 }
 
 .products-cards.milkshakes {
   background-color: #c2e297;
+  -webkit-box-shadow: 0px 6px 6px rgba(194, 226, 151, 0.45);
+          box-shadow: 0px 6px 6px rgba(194, 226, 151, 0.45);
 }
 
 .products-cards .title-menu {
@@ -1264,7 +1270,11 @@ header {
 
 @media screen and (min-width: 768px) {
   .products-cards .text-menu {
+<<<<<<< Updated upstream
     padding: 0px;
+=======
+    padding: 0px 40px;
+>>>>>>> Stashed changes
   }
 }
 
@@ -1317,8 +1327,16 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+<<<<<<< HEAD
+  .products-cards .products-images {
+<<<<<<< Updated upstream
+=======
+    max-width: 220px;
+>>>>>>> Stashed changes
+=======
   .products-cards .text-menu .products-images {
     max-width: 220px;
+>>>>>>> dev
     width: 220px;
     height: 224px;
     margin-top: -103px;
@@ -2530,6 +2548,11 @@ p {
   margin-left: 14px;
 }
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> dev
 .backdrop {
   position: fixed;
   top: 0;
@@ -2612,7 +2635,11 @@ p {
 
 @media screen and (min-width: 1200px) {
   .modalFranchise {
+<<<<<<< HEAD
+    height: 600px;
+=======
     height: 500px;
+>>>>>>> dev
     min-width: 620px;
   }
 }
@@ -2846,6 +2873,67 @@ p {
   }
 }
 
+<<<<<<< HEAD
+.franchiseButton {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  min-width: 100px;
+  min-height: 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.31;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #d41342;
+  border-radius: 22px;
+  border: 0 solid transparent;
+  cursor: pointer;
+  -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .franchiseButton {
+    font-size: 14px;
+    margin-top: 30px;
+    min-width: 110px;
+    min-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .franchiseButton {
+    font-size: 16px;
+    margin-top: 40px;
+    min-width: 120px;
+    min-height: 50px;
+  }
+}
+
+.franchiseButton:hover, .franchiseButton:focus {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  -webkit-box-shadow: 0px 0px 18px #c7133e;
+          box-shadow: 0px 0px 18px #c7133e;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+}
+
+>>>>>>> Stashed changes
+=======
+>>>>>>> dev
 .footer-container {
   padding-top: 57px;
   font-style: normal;

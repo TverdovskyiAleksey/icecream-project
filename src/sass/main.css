@@ -99,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -1441,7 +1441,7 @@ header {
 @media screen and (min-width: 1200px) {
   .relative {
     display: block;
-    width: 1200px;
+    width: 1282px;
     top: 342px;
     left: 0px;
   }

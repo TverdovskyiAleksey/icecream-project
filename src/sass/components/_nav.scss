@@ -1,25 +1,40 @@
 header {
   position: relative;
-  overflow: hidden;
+
+  @media screen and (min-width: 1200px) {
+    overflow: hidden;
+  }
 }
 
 .main-nav {
-  margin-top: 6px;
+  // margin-top: 6px;
   position: absolute;
-  width: 100%;
+  width: 320px;
   z-index: 110;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin-top: 37px;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      margin-top: 0px;
+      justify-content: center;
+    }
+  }
 }
 
 .logo {
+  margin-top: 6px;
   display: flex;
-  width: 199px;
+  // width: 199px;
   align-items: center;
   font-family: $font-family-title;
   font-weight: $font-weight-body;
-  font-size: 27px;
+  // font-size: 27px;
   line-height: 1.13;
+  font-size: 22px;
   letter-spacing: $letter-spacing-body;
   text-transform: uppercase;
   color: $primary-passion-color;
@@ -29,13 +44,14 @@ header {
     // margin-left: 20px;
   }
   @media screen and(min-width: 768px) and (max-width: 1199px) {
-    margin-top: 37px;
-    margin-left: 16px;
+    margin-top: 0;
+    // margin-left: 16px;
   }
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 38px;
     left: 45px;
+    margin-top: 0;
   }
 }
 
@@ -44,6 +60,7 @@ header {
 }
 
 .burger-menu {
+  display: none;
   @media screen and (max-width: 1199px) {
     position: absolute;
     top: 0;
@@ -59,6 +76,7 @@ header {
     transition: transform 250ms $timing-function;
 
     &.is-open {
+      display: block;
       transform: translateX(0);
       filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
     }
@@ -77,14 +95,16 @@ header {
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 254px;
-    height: 399px;
+    height: 1020px;
+    right: 34px;
+    top: -37px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 55px;
-    margin-left: 354px;
+    // margin-top: 55px;
+    // margin-left: 354px;
 
     display: block;
     width: 100%;
@@ -133,6 +153,39 @@ header {
   }
 }
 
+.btn-navy {
+  display: none;
+  position: absolute;
+  right: 67px;
+  top: 2px;
+  z-index: -1;
+  width: 160px;
+  height: 44px;
+  padding: 16px 37px;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: $font-weight-bold;
+  color: $primary-passion-color;
+  background-color: $primary-white-color;
+  border-radius: 22px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .buy {
   margin-left: 12px;
 
@@ -174,8 +227,8 @@ header {
     margin-right: 20px;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 30px;
-    margin-right: 177px;
+    margin-top: 0;
+    margin-right: 258px;
   }
 
   .icon-close {
@@ -184,7 +237,7 @@ header {
 
   &.is-open {
     // position: absolute;
-    top: -29px;
+    top: -20px;
     right: 8px;
     z-index: 3;
     color: $primary-white-color;
@@ -247,6 +300,9 @@ header {
     width: 100%;
     align-items: center;
     // background-color: $hero-pink-color;
+    right: -325px;
+    position: absolute;
+    top: 57px;
   }
 
   .item {

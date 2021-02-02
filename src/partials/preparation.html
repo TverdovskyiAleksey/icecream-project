@@ -39,9 +39,18 @@
                   <button class="button">Read more</button>  
                </div>
                     
-             
-            
-                <img class="milk relative" src="./images/preparation-mobil/sectionbg.png" alt="фон молока">
+              <picture>
+                <source srcset="
+                          ./images/preparation-desctop/sectionbg.png 1x,
+                          ./images/preparation-desctop/sectionbg@2x.png 2x" media="(min-width:1200px)" type="image/png">
+              
+                <source srcset="
+                          ./images/preparation-mobil/sectionbg.png 1x,
+                          ./images/preparation-mobil/sectionbg@2x.png 2x" media="(max-width:767px)" type="image/png">
+                <img class="milk relative" src="./images/preparation-mobil/sectionbg.png" alt="корова и молоко">
+              </picture>
+               
+                <!-- <img class="milk relative" src="./images/preparation-mobil/sectionbg.png" alt="фон молока"> -->
             
             
     <ul  class="total">

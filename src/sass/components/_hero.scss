@@ -11,9 +11,9 @@
 }
 
 .hero-container {
-  position: relative;
+  // position: relative;
   width: 320px;
-  height: 502px;
+  height: 446px;
 
   @media screen and(min-width: 768px) {
     width: 768px;
@@ -241,7 +241,7 @@
 
   @media screen and(min-width: 768px) {
     right: 137px;
-    bottom: 46px;
+    bottom: 37px;
     width: 322px;
     height: 322px;
   }

@@ -110,6 +110,13 @@
     font-size: 14px;
     height: 40px;
   }
+  transition: scale 250ms $timing-function, box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.09);
+    box-shadow: 0px 5px 18px $hover-passion-button;
+  }
 }
 
 .hero-btn:hover,
@@ -200,6 +207,13 @@
     height: 26px;
     margin-top: 20px;
     margin-left: 30px;
+  }
+  transition: scale 250ms $timing-function, box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.09);
+    box-shadow: 0px 5px 18px $hover-passion-button;
   }
 }
 

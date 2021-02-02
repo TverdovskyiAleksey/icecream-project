@@ -190,6 +190,7 @@
 }
 .footer-phone-link {
   color: $primary-passion-color;
+  font-size: 14px;
   @media screen and (max-width: 270px) {
     display: block;
   }
@@ -233,7 +234,7 @@
 }
 
 .copyright-part {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 767px) {
     display: block;
     text-align: center;
   }

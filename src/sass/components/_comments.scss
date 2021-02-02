@@ -2,13 +2,23 @@
   background-color: $primary-white-color;
 }
 .comments-conteiner {
+  position: relative;
   display: block;
+  padding-top: 154px;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 170px;
   padding-left: 0px;
   padding-right: 0px;
   background-color: $primary-white-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 279px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 382px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -19,21 +29,23 @@
 }
 /*picture*/
 .comments-collage {
+  position: absolute;
+  top: -5%;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 80px;
 
   background-color: $primary-white-color;
 }
 @media screen and (min-width: 768px) {
   .comments-collage {
-    padding-bottom: 119px;
+    top: -12%;
   }
 }
 @media screen and (min-width: 1200px) {
   .comments-collage {
-    padding-bottom: 123px;
+    top: -17%;
   }
 }
 /*picture*/
@@ -115,9 +127,13 @@
   height: 40px;
   display: block;
   top: -15px;
-  left: 4px;
+  left: -4px;
   background-image: url(../images/comments/img2-mobile@1x.svg);
   z-index: -2;
+
+  @media screen and (min-width: 1200px) {
+    left: -15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -216,10 +232,10 @@
 /*div*/
 .comments-text {
   position: relative;
-  width: 320px;
+  width: 280px;
   height: 340px;
   padding: 43px 66px 26px 57px;
-  margin: 0px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,6 +283,7 @@
   .gradientBox {
     position: absolute;
     padding: 44px 35px 37px;
+    top: 25px;
   }
 }
 .gradient {
@@ -284,4 +301,41 @@
     #fafafa
   );
   background-size: 62px 60px;
+}
+.slide {
+  outline: none;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  outline: none;
+  border-radius: 0;
+  z-index: 3;
+  background-image: url(../images/location/home.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
 }

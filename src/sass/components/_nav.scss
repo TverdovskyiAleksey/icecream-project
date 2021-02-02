@@ -5,40 +5,40 @@ header {
 .main-nav {
   position: absolute;
   width: 100%;
-  z-index: 11;
+  z-index: 110;
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
-    padding-top: 6px;
-    padding-left: 20px;
-  }
-  @media screen and(min-width: 768px) and (max-width: 1199px) {
-    padding-top: 37px;
-    padding-left: 20px;
-  }
 }
 .logo {
-  display: flex;
-  width: 199px;
-  align-items: center;
-  font-family: $font-family-title;
-  font-weight: $font-weight-body;
-  font-size: 27px;
-  line-height: 1.13;
-  letter-spacing: $letter-spacing-body;
-  text-transform: uppercase;
-  color: $primary-passion-color;
+    display: flex;
+    width: 199px;
+    align-items: center;
+    font-family: $font-family-title;
+    font-weight: $font-weight-body;
+    font-size: 27px;
+    line-height: 1.13;
+    letter-spacing: $letter-spacing-body;
+    text-transform: uppercase;
+    color: $primary-passion-color;
+    
+    @media screen and (max-width: 767px) {
+      margin-top: 6px;
+      margin-left: 20px;
+    }
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+      margin-top: 37px;
+      margin-left: 34px;
+    }    
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: 38px;
+        left: 45px;
+    }
+}
 
-  .img-logo {
-    margin-right: 20px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 38px;
-    left: 45px;
-  }
+.img-logo {
+  margin-right: 20px;
 }
 
 .burger-menu {
@@ -63,7 +63,7 @@ header {
     &.is-open .btn-nav {
       @media screen and (min-width: 768px) {
         top: 60px;
-        right: 20px;
+        right: 34px;
         width: 186px;
       }
     }
@@ -77,16 +77,16 @@ header {
 
   @media screen and (min-width: 768px) {
     width: 254px;
-    height: 1020px;
+    height: 399px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 51px;
     margin-left: 354px;
 
-    display: flex;
+    display: block;
     width: 100%;
-    align-items: center;
+    height: auto;
   }
 }
 
@@ -118,18 +118,17 @@ header {
     box-shadow: 0px 5px 18px $hover-passion-button;
     cursor: pointer;
   }
-
-  @media screen and (min-width: 1200px) {
+  
+    @media screen and (min-width: 768px) {
+    top: 38px;
+    right: 328px;
+    width: 160px;
+    }
+    @media screen and (min-width: 1200px) {
     width: 159px;
     top: 39px;
     right: 116px;
-  }
-
-  @media screen and (min-width: 768px) {
-    top: 38px;
-    right: 279px;
-    width: 160px;
-  }
+    }
 }
 
 .buy {
@@ -169,6 +168,7 @@ header {
     color 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
+    margin-top: 44px;
     margin-right: 224px;
   }
 
@@ -178,7 +178,7 @@ header {
 
   &.is-open {
     position: absolute;
-    top: 23px;
+    top: -29px;
     right: 8px;
     z-index: 3;
     color: $primary-white-color;
@@ -194,7 +194,7 @@ header {
     }
 
     @media screen and (min-width: 768px) {
-      right: -200px;
+      right: -190px;
     }
   }
 
@@ -239,7 +239,7 @@ header {
     display: flex;
     width: 100%;
     align-items: center;
-    background-color: $hero-pink-color;
+    // background-color: $hero-pink-color;
   }
 
   .item {
@@ -270,9 +270,12 @@ header {
     line-height: 1.29;
     color: $primary-white-color;
 
+    transition: color 250ms $timing-function, transform 250ms $timing-function;
+
     &:hover,
     &:focus {
       color: $primary-passion-color;
+      transform: scale(1.07);
     }
   }
 }
@@ -291,9 +294,16 @@ header {
   color: $primary-passion-color;
   background-color: rgba(128, 128, 128, 0.2);
 
+  transition: color 250ms $timing-function, transform 250ms $timing-function;
+
   &:hover,
   &:focus {
-    color: $title-pink-color;
+      color: $title-pink-color;
+      transform: scale(0.91);
+
+    @media screen and (min-width: 1200px) {
+    transform: scale(1.07);
+    }
   }
 }
 

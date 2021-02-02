@@ -354,40 +354,38 @@ h5 {
 header {
   position: relative;
   overflow: hidden;
+  background-color: #ffb8ca;
 }
 
 .main-nav {
   margin-top: 6px;
-  position: absolute;
   width: 100%;
   z-index: 110;
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .main-nav {
+    margin-top: 37px;
+    position: absolute;
+  }
+}
 
 .logo {
   display: flex;
-  width: 199px;
+  min-width: 199px;
   align-items: center;
   font-family: "Titan One", cursive;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 23px;
   line-height: 1.13;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .logo {
-    margin-top: 37px;
-    margin-left: 16px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
-    position: absolute;
-    top: 38px;
-    left: 45px;
+    margin-right: 110px;
   }
 }
 
@@ -398,6 +396,7 @@ header {
 @media screen and (max-width: 1199px) {
   .burger-menu {
     position: absolute;
+    z-index: 11;
     top: 0;
     right: 0;
     width: 250px;
@@ -434,8 +433,6 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .burger-menu {
-    margin-top: 55px;
-    margin-left: 354px;
     display: block;
     width: 100%;
     height: auto;
@@ -470,15 +467,15 @@ header {
 }
 @media screen and (min-width: 768px) {
   .btn-nav {
-    top: 38px;
-    right: 290px;
+    top: 5px;
+    right: 325px;
     width: 160px;
   }
 }
 @media screen and (min-width: 1200px) {
   .btn-nav {
     width: 159px;
-    top: 44px;
+    top: 3px;
     right: 92px;
   }
 }
@@ -496,8 +493,7 @@ header {
   width: 22px;
   height: 22px;
   padding: 0;
-  margin-left: auto;
-  margin-right: 20px;
+  margin-left: 61px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,16 +510,9 @@ header {
   background-color: #d41443;
   color: #ffffff;
 }
-@media screen and (max-width: 767px) {
-  .nav-menu {
-    margin-left: 66px;
-    margin-right: 20px;
-  }
-}
 @media screen and (min-width: 768px) {
   .nav-menu {
-    margin-top: 30px;
-    margin-right: 177px;
+    margin-left: 282px;
   }
 }
 .nav-menu .icon-close {
@@ -532,7 +521,7 @@ header {
 .nav-menu.is-open {
   top: -29px;
   right: 8px;
-  z-index: 3;
+  z-index: 13;
   color: #ffffff;
   background-color: #ffa5ba;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -665,9 +654,8 @@ header {
 }
 
 .hero-container {
-  position: relative;
   width: 320px;
-  height: 502px;
+  height: 446px;
 }
 @media screen and (min-width: 768px) {
   .hero-container {
@@ -774,12 +762,17 @@ header {
   font-size: 8px;
   line-height: 1.3;
   cursor: pointer;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .hero-btn {
     font-size: 14px;
     height: 40px;
   }
+}
+.hero-btn:hover, .hero-btn:focus {
+  transform: scale(1.09);
+  box-shadow: 0px 5px 18px #c7133e;
 }
 
 .hero-btn:hover,
@@ -875,6 +868,7 @@ header {
   background-color: #ffffff;
   border-radius: 50%;
   margin-top: 7px;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .hero-icon-thumb {
@@ -883,6 +877,10 @@ header {
     margin-top: 20px;
     margin-left: 30px;
   }
+}
+.hero-icon-thumb:hover, .hero-icon-thumb:focus {
+  transform: scale(1.09);
+  box-shadow: 0px 5px 18px #c7133e;
 }
 
 .hero-icon-arrow {
@@ -913,7 +911,7 @@ header {
 @media screen and (min-width: 768px) {
   .circle {
     right: 137px;
-    bottom: 46px;
+    bottom: 37px;
     width: 322px;
     height: 322px;
   }
@@ -1139,6 +1137,7 @@ header {
   padding: 0px 0px 40px;
   border-radius: 15px;
   margin-bottom: 150px;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products-cards:last-child {
   margin-bottom: 0px;
@@ -1254,6 +1253,10 @@ header {
     margin-top: -103px;
     margin-bottom: 22px;
   }
+}
+.products-cards:hover, .products-cards:focus {
+  transform: scale(1.09);
+  box-shadow: 0px 5px 18px #c7133e;
 }
 
 .about-btn {

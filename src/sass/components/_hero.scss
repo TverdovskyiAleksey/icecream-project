@@ -11,7 +11,7 @@
 .hero-container {
   position: relative;
   width: 320px;
-  height: 502px;
+  height: 446px;
   @media screen and(min-width: 768px) {
     width: 768px;
     height: 399px;
@@ -29,7 +29,7 @@
 }
 .hero-left-part-container {
   position: absolute;
-  top: 193px;
+  top: 137px;
   left: 20px;
   z-index: 10;
   @media screen and(min-width: 768px) {
@@ -192,7 +192,7 @@
   background-color: $title-pink-color;
   border-radius: 50%;
   @media screen and(max-width: 767px) {
-    top: 83px;
+    top: 27px;
     left: 36px;
   }
   @media screen and(min-width: 768px) {
@@ -212,7 +212,7 @@
   position: absolute;
   @media screen and(max-width: 767px) {
     width: 171px;
-    top: 92px;
+    top: 36px;
     left: 117px;
   }
   @media screen and(min-width: 768px) {
